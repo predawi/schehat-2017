@@ -1,0 +1,23 @@
+/* Header css
+ ----------------------------------------------------------------------------------------------------*/
+.header__logo {
+	display: inline-block;
+	@media screen and (min-width: $desktop-small) {
+		z-index: 10;
+		position: absolute;
+		top: 50%; left: 75px;
+		margin-top: -23px;
+	}
+}
+.header__logo-link {
+	display: block;
+}
+.header__icon {
+	display: block;
+	width: 92px; height: 46px;
+	color: $maincolor;
+}
+.header__img {
+	@include img__responsive();
+	margin: 0 auto $base-spacing;
+}

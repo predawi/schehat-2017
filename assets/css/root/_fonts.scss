@@ -1,0 +1,6 @@
+//Dinpro for body text
+@include declare-font-face("Dinpro", "#{$fonts-url}/dinpro/DINPro-light"); //regularx300
+@include declare-font-face("Dinpro", "#{$fonts-url}/dinpro/DINPro-Medium", 500); //mediumx500
+
+//Phosphate for Hn
+@include declare-font-face("Phosphate", "#{$fonts-url}/phosphate/PhosphateSolid"); //regular

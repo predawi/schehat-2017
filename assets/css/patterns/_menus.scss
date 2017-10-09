@@ -1,0 +1,100 @@
+/* Menus
+----------------------------------------------------------------------------------------------------*/
+.menu__fastaccess {
+	margin: 0;
+	font-size: 9px;
+	display: none;
+	li {
+		display: inline;
+		a {
+			position: absolute;
+			z-index: 1;
+			color: transparent;
+			@include hover {
+				text-decoration: none;
+				z-index: 2;
+				padding: $base-spacing / 2;
+				color: $lightcolor;
+				background-color: $maincolor;
+			}
+		}
+	}
+	@media screen and (min-width: $desktop-small) {
+		display: block;
+	}
+}
+// Mobile open/close button */
+.button__menu-open {
+	display: block;
+}
+.button__menu-close {
+	display: none;
+}
+// Mobile menu stop scroll on body and display button */
+.menu-mobile--active {
+	overflow: hidden;
+	.button__menu-open {
+		display: none;
+	}
+	.button__menu-close {
+		display: block;
+	}
+}
+.button__menu-container {
+	z-index: 999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	@media screen and (min-width: $desktop-small) {
+		display: none;
+	}
+}
+.menu {
+	@include clearfix;
+	width: auto;
+	.wrapper {
+		padding: 0;
+	}
+	ul {
+		margin: 0;
+		@include clearfix;
+		&>li {
+			line-height: 21px;
+			font-size: 12px;
+			text-transform: uppercase;
+			&>a {
+				display: block;
+				@include hover {
+					color:$lightcolor;
+					background:$maincolor;
+				}
+			}
+			@include hover {
+
+			}
+		}
+	}
+	@media screen and (min-width: $desktop-small) {
+		//reset mobile menu position and dimensions
+		position: absolute;
+		z-index: 10;
+		top: 50%; right: 75px;
+		left: auto;
+		margin-top: -21px;
+		display: inline-block;
+		ul {
+			&>li {
+				display: block;
+				position: relative;
+				@include hover {
+					ul {
+						top: 40px;
+					}
+				}
+				&.sfHover {
+
+				}
+			}
+		}
+	}
+}

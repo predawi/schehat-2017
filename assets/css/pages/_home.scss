@@ -1,0 +1,26 @@
+/* Page Home css
+-------------------------------------------------------------- */
+.visual-bg {
+    position: fixed;
+    z-index: 0;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: $altcolor;
+}
+
+.intro {
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+}
+.intro__title {
+    display: inline-block;
+    text-align: left;
+    color: $maincolor;
+    @media screen and (min-width: $desktop-small) {
+        margin: auto;
+        line-height: 116px;
+        font-size: 70px;
+        letter-spacing: 25.4px;
+    }
+}
