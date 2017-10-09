@@ -4,6 +4,7 @@
 
 var lazySizes = require('lazysizes')
 var lazySizesBgset = require('lazysizes/plugins/bgset/ls.bgset')
+var flag = require('./src/flag')
 require('picturefill')
 
 require('./src/button-href')
@@ -25,3 +26,5 @@ lazySizes.customMedia = {}
  * https://github.com/aFarkas/lazysizes/tree/gh-pages/plugins/bgset#lazysizes-bgset-extension---responsive-background-images
  */
 lazySizesBgset.customMedia = {}
+
+flag()

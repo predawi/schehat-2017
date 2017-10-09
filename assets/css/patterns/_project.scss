@@ -27,3 +27,6 @@
         font-weight: 300;
     }
 }
+
+canvas { position: absolute; top: 0; left: 0; z-index: -1; }
+canvas + canvas { opacity: 0.3; z-index: -2; }

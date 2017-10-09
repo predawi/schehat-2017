@@ -93,9 +93,10 @@ require( dirname( __FILE__ ) . '/functions/_init.php' );
 
 		<!-- Modernizr Custom (JS + SVG detection) -->
 		<script type="text/javascript" src="../assets/js/vendor_async/modernizr.custom.min.js"></script>
-
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<!-- Pixi JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
 
 	</head>
 	<body itemscope itemtype="http://schema.org/WebPage" class="<?php echo $class; ?>">
