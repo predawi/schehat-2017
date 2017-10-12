@@ -96,7 +96,8 @@ require( dirname( __FILE__ ) . '/functions/_init.php' );
 		<!-- jQuery -->
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<!-- Pixi JS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.6/pixi.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.1/dat.gui.min.js"></script>
 
 	</head>
 	<body itemscope itemtype="http://schema.org/WebPage" class="<?php echo $class; ?>">

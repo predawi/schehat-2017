@@ -4,10 +4,10 @@
 	<!-- Intro -->
 	<section id="intro" class="section--full intro magnetic">
 		<h1 class="intro__title">
-			DIGITAL<br>
-			Art direction<br>
-			& production<br>
-			made with
+			<span class="txtwav slow">DIGITAL</span>&nbsp;<br>
+			<span class="txtwav slow">Art direction</span>&nbsp;<br>
+			<span class="txtwav slow">& production</span>&nbsp;<br>
+			<span class="txtwav slow">made with</span>
 		</h1>
 	</section>
 

@@ -1,6 +1,7 @@
+const PIXI = require('pixi.js')
+
 var flag = function () {
   let mesh
-  let PIXI
   let requestAnimationFrame
   let cloth
   let spacingX = 5
@@ -56,7 +57,8 @@ var flag = function () {
 
     document.body.className = 'loading'
 
-    let texture = new PIXI.Texture.FromImage(opts.image)
+    let TextureImg = PIXI.Texture.fromImage
+    let texture = new TextureImg(opts.image)
     if (!texture.requiresUpdate) { texture.update() }
 
     texture.on('error', function () { console.error('AGH!') })
@@ -69,15 +71,20 @@ var flag = function () {
       if (mesh) { stage.removeChild(mesh) }
 
       mesh = new PIXI.mesh.Plane(this, opts.pointsX, opts.pointsY)
+      console.log('mesh 1')
       mesh.width = this.width
       mesh.height = this.height
 
       spacingX = mesh.width / (opts.pointsX - 1)
       spacingY = mesh.height / (opts.pointsY - 1)
-
+      console.log('mesh 2')
       cloth = new Cloth(opts.pointsX - 1, opts.pointsY - 1, !opts.pinCorners)
 
+      console.log('mesh 3')
+
       stage.addChild(mesh)
+
+      console.log('mesh last')
     })
   }
 
@@ -236,6 +243,7 @@ var flag = function () {
 
   class Cloth {
     constructor (clothX, clothY, free) {
+      console.log('cloth')
       this.points = []
 
       let startX = canvas.width / 2 - clothX * spacingX / 2
@@ -280,6 +288,7 @@ var flag = function () {
       })
 
       ctx.stroke()
+      console.log('stroke')
     }
   }
 
