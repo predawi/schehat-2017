@@ -1,5 +1,24 @@
 /* Sections
 ----------------------------------------------------------------------------------------------------*/
+.projects-wrapper {
+    position: relative;
+    z-index: 2;
+}
+.next-project {
+    position: fixed;
+    z-index: 10;
+    bottom: 0; left: 50%;
+    margin-left: -50px;
+    .scrolled & {
+        opacity: 1;
+    }
+    .zoomed & {
+        opacity: 0;
+    }
+    .lastScroll & {
+        opacity: 0;
+    }
+}
 .project {
     @media screen and (min-width: $desktop-small) {
         display: flex;
@@ -26,6 +45,32 @@
         display: block;
         font-weight: 300;
     }
+}
+.project-link {
+    display: block;
+}
+
+
+// Zoom tpl
+.close-project {
+    position: fixed;
+    z-index: 10;
+    top: 0; left: 50%;
+    margin-left: -50px;
+    .active & {
+        opacity: 1;
+    }
+}
+.project-zoom-tpl {
+    position: relative;
+    z-index: 3;
+}
+.project-zoom {
+    display: none;
+    text-align: center;
+}
+.project-slide {
+    margin-bottom: 100px;
 }
 
 canvas { position: absolute; top: 0; left: 0; z-index: 11; }

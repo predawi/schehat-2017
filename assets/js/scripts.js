@@ -5,12 +5,13 @@
 var lazySizes = require('lazysizes')
 var lazySizesBgset = require('lazysizes/plugins/bgset/ls.bgset')
 var flag = require('./src/flag')
-require('picturefill')
+// require('picturefill')
 
 require('./src/button-href')
 require('./src/ie_message')
 require('./src/menu')
 require('./src/placeholder')
+require('./src/projects')
 require('./src/scripts-domready')
 require('./src/select')
 require('./src/scroll')
@@ -27,4 +28,4 @@ lazySizes.customMedia = {}
  */
 lazySizesBgset.customMedia = {}
 
-flag()
+// flag()

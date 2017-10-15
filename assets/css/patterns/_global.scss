@@ -4,3 +4,13 @@
     position: relative;
     z-index: 2;
 }
+.base-cta {
+    opacity: 0;
+    line-height: 19px;
+    font-size: 50px;
+    font-family: $customfont-2;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: $lightcolor;
+    transition: all 0.3s ease-in-out;
+}
