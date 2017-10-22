@@ -5,7 +5,7 @@
 var lazySizes = require('lazysizes')
 var lazySizesBgset = require('lazysizes/plugins/bgset/ls.bgset')
 var flag = require('./src/flag')
-// require('picturefill')
+require('picturefill')
 
 require('./src/button-href')
 require('./src/ie_message')

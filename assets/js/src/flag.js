@@ -2,7 +2,6 @@ const PIXI = require('pixi.js')
 
 var flag = function () {
   let mesh
-  let requestAnimationFrame
   let cloth
   let spacingX = 5
   let spacingY = 5

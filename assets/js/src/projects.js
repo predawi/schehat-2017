@@ -4,6 +4,7 @@
 
 // Dependencies
 var $ = require('jquery')
+var CanvasSlideshow = require('./water')
 require('../vendor/magnetic-scroll')
 
 var dataProject, dataBg, projects
@@ -22,7 +23,22 @@ projects.on('click', function (e) {
   // Hide projects thumbs
   $('#projects-wrapper').fadeOut()
   // Set project img in background
-  $('#background-holder').css('background-image', 'url(' + dataBg + ')')
+  // Select all your images
+
+  var spriteImagesSrc = []
+  spriteImagesSrc.push(dataBg)
+
+  var initCanvasSlideshow = new CanvasSlideshow({
+    sprites: spriteImagesSrc,
+    displacementImage: 'http://localhost/schehat/assets/img/water.jpg',
+    autoPlay: true,
+    autoPlaySpeed: [10, 3],
+    displaceScale: [200, 70],
+    fullScreen: true,
+    stageWidth: 800,
+    stageHeight: 600,
+    displaceAutoFit: false
+  })
 
   setTimeout(function () {
     // Prepare zoom section
@@ -41,7 +57,6 @@ $('#close-project').on('click', function (e) {
   $('#project-zoom-tpl').fadeOut().removeClass('active')
   $('[data-zoom]').fadeOut()
   // Remove project img
-  $('#background-holder').css('background-image', 'url()')
   // Show projects preview
   $('#projects-wrapper').fadeIn()
   // Remove zoomed state

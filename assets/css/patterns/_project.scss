@@ -64,8 +64,14 @@
 .project-zoom-tpl {
     position: relative;
     z-index: 3;
+    canvas {
+        position: fixed;
+        z-index: 0;
+    }
 }
 .project-zoom {
+    position: relative;
+    z-index: 1;
     display: none;
     text-align: center;
 }
