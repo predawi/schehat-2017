@@ -18,7 +18,6 @@ var initWater = function (options) {
     .load(init)
 
   function init (loader, resources) {
-    console.log('init')
     var container = new PIXI.Container()
     var background = new PIXI.Sprite(resources.rocks.texture)
     var displacementSprite = new PIXI.Sprite(resources.displacementMap.texture)

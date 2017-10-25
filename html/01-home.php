@@ -102,6 +102,8 @@
 	<div id="project-zoom-tpl" class="project-zoom-tpl">
 		<a href="#" class="close-project base-cta" id="close-project">Back</a>
 
+		<canvas id="canvas"></canvas>
+
 		<div class="project-zoom" data-zoom="project-01">
 			<div class="project-slide">
 				<img src="http://placehold.it/760x456" alt="">
