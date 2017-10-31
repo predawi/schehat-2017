@@ -16,6 +16,7 @@ projects.on('click', function (e) {
   // Get some datas
   dataProject = $(this).data('project')
   dataBg = $(this).data('bg')
+
   // Prevent Scrollify
   $.scrollify.destroy()
   // Prepare zoom state
@@ -23,9 +24,7 @@ projects.on('click', function (e) {
   // Hide projects thumbs
   $('#projects-wrapper').fadeOut()
   // Set project img in background
-  console.log('before water')
-  initWater()
-  console.log('after water')
+  initWater(dataBg)
 
   setTimeout(function () {
     // Prepare zoom section

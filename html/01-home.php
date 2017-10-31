@@ -34,7 +34,7 @@
 				</div>
 
 				<div class="project__img">
-					<a href="#" class="project-link" data-project="project-01" data-bg="../assets/img/sample/gq-image.jpg">
+					<a href="#" class="project-link" data-project="project-01" data-bg="sample/gq-image.jpg">
 						<?php //echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
 						<img src="http://placehold.it/760x430" alt="">
 					</a>
@@ -61,7 +61,7 @@
 				</div>
 
 				<div class="project__img">
-					<a href="#" class="project-link" data-project="project-02" data-bg="../assets/img/sample/gq-image.jpg">
+					<a href="#" class="project-link" data-project="project-02" data-bg="sample/gq-image.jpg">
 						<?php //echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
 						<img src="http://placehold.it/760x430" alt="">
 					</a>

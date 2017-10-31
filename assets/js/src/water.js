@@ -1,29 +1,33 @@
 const PIXI = require('../vendor/pixi.min')
 const TweenMax = require('../vendor/TweenMax.min')
 
-var initWater = function (options) {
+var initWater = function (dataBg) {
+  var baseUrl = 'http://localhost/schehat/assets/img/'
 
-  var baseUrl = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/106114/'
+  var containerSize = {x: 929, y: 808}
+  var renderer = PIXI.autoDetectRenderer(containerSize.x, containerSize.y)
+  document.body.appendChild(renderer.view)
 
-  var vw = 630
-  var vh = 410
+  var container = new PIXI.Container()
 
-  var app = new PIXI.Application(vw, vh, {
+  var app = new PIXI.Application(containerSize.x, containerSize.y, {
     view: document.getElementById('canvas')
   })
 
   var loader = new PIXI.loaders.Loader(baseUrl)
-    .add('displacementMap', 'displacementmap2.png?v=1')
-    .add('rocks', 'rocks.jpg?v=1')
+    .add('displacementMap', 'water.jpg')
+    .add('rocks', dataBg)
     .load(init)
 
+  console.log('rocks !')
+
   function init (loader, resources) {
-    var container = new PIXI.Container()
-    var background = new PIXI.Sprite(resources.rocks.texture)
+    var background = setbackground(containerSize, new PIXI.Sprite.fromImage(baseUrl + dataBg), 'cover')
+    renderer.render(container)
     var displacementSprite = new PIXI.Sprite(resources.displacementMap.texture)
     var displacementFilter = new PIXI.filters.DisplacementFilter(displacementSprite)
 
-    container.filterArea = new PIXI.Rectangle(0, 0, vw - 20, vh - 20)
+    container.filterArea = new PIXI.Rectangle(0, 0, containerSize.x, containerSize.y)
     container.filters = [displacementFilter]
     displacementSprite.texture.baseTexture.wrapMode = PIXI.WRAP_MODES.REPEAT
 
@@ -39,6 +43,36 @@ var initWater = function (options) {
       y: 512
     })
   }
+}
+
+function setbackground (bgSize, inputSprite, type, forceSize) {
+  var sprite = inputSprite
+  var bgContainer = new PIXI.Container()
+  var mask = new PIXI.Graphics().beginFill(0x8bc5ff).drawRect(0, 0, bgSize.x, bgSize.y).endFill()
+  bgContainer.mask = mask
+  bgContainer.addChild(mask)
+  bgContainer.addChild(sprite)
+
+  var sp = {x: sprite.width, y: sprite.height}
+  if (forceSize) sp = forceSize
+  var winratio = bgSize.x / bgSize.y
+  var spratio = sp.x / sp.y
+  var scale = 1
+  var pos = new PIXI.Point(0, 0)
+  if (type === 'cover' ? (winratio > spratio) : (winratio < spratio)) {
+    // photo is wider than background
+    scale = bgSize.x / sp.x
+    pos.y = -((sp.y * scale) - bgSize.y) / 2
+  } else {
+    // photo is taller than background
+    scale = bgSize.y / sp.y
+    pos.x = -((sp.x * scale) - bgSize.x) / 2
+  }
+
+  sprite.scale = new PIXI.Point(scale, scale)
+  sprite.position = pos
+
+  return bgContainer
 }
 
 module.exports = initWater

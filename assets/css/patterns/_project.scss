@@ -64,9 +64,15 @@
 .project-zoom-tpl {
     position: relative;
     z-index: 3;
-    canvas {
+    #canvas {
+        display: none;
         position: fixed;
-        z-index: 0;
+        top: 0; left: 0; right: 0; bottom: 0;
+        z-index: 11;
+        width: 100%; height: 100%;
+        .zoomed & {
+            display: block;
+        }
     }
 }
 .project-zoom {
@@ -78,6 +84,3 @@
 .project-slide {
     margin-bottom: 100px;
 }
-
-canvas { position: absolute; top: 0; left: 0; z-index: 11; }
-canvas + canvas { opacity: 0.3; z-index: 10; }
