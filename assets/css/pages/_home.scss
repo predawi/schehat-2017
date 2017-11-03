@@ -8,11 +8,20 @@
     background: $altcolor;
     transition: all .3s ease-in-out;
 }
-
+.main {
+    transition: all .2s ease-in-out;
+    .zoomed & {
+        opacity: 0;
+    }
+}
 .intro {
     display: flex;
     vertical-align: middle;
     text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    .zoomed & {
+        opacity: 0;
+    }
 }
 .intro__title {
     display: inline-block;

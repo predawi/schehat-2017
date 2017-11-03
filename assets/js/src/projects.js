@@ -4,7 +4,7 @@
 
 // Dependencies
 var $ = require('jquery')
-var initWater = require('./water')
+// var initWater = require('./water')
 require('../vendor/magnetic-scroll')
 
 var dataProject, dataBg, projects
@@ -17,23 +17,30 @@ projects.on('click', function (e) {
   dataProject = $(this).data('project')
   dataBg = $(this).data('bg')
 
-  // Prevent Scrollify
-  $.scrollify.destroy()
+  // Set project img in background
+  // initWater(dataBg)
+
   // Prepare zoom state
   $('body').addClass('zoomed')
-  // Hide projects thumbs
-  $('#projects-wrapper').fadeOut()
-  // Set project img in background
-  initWater(dataBg)
+  // Prevent Scrollify
+  $.scrollify.destroy()
+
+  setTimeout(function () {
+    // Hide projects thumbs
+    $('#projects-wrapper').fadeOut()
+  }, 200)
 
   setTimeout(function () {
     // Prepare zoom section
     $('#project-zoom-tpl').fadeIn().addClass('active')
-    // Reset window scroll
-    window.scrollTo(0, 0)
     // Open project
     $('[data-zoom="' + dataProject + '"]').fadeIn()
-  }, 300)
+  }, 400)
+
+  setTimeout(function () {
+    // Reset window scroll
+    window.scrollTo(0, 0)
+  }, 600)
 
   e.preventDefault()
 })
