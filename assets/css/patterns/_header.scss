@@ -5,12 +5,20 @@
 	@media screen and (min-width: $desktop-small) {
 		z-index: 10;
 		position: fixed;
-		top: 50%; left: 75px;
+		top: 50%; left: 4%;
 		margin-top: -23px;
 	}
 }
 .header__logo-link {
 	display: block;
+	width: 100px;
+	line-height: 21px;
+	font-family: $customfont-1;
+	font-weight: 700;
+	text-transform: uppercase;
+	span {
+		display: block;
+	}
 }
 .header__icon {
 	display: block;

@@ -61,7 +61,7 @@
 		&>li {
 			line-height: 21px;
 			font-size: 12px;
-			font-weight: 500;
+			font-weight: 700;
 			text-transform: uppercase;
 			&>a {
 				display: block;
@@ -79,7 +79,7 @@
 		//reset mobile menu position and dimensions
 		position: fixed;
 		z-index: 10;
-		top: 50%; right: 75px;
+		top: 50%; right: 4%;
 		left: auto;
 		margin-top: -21px;
 		display: inline-block;

@@ -4,7 +4,7 @@
 		<?php include '../assets/icons/icons.svg'; ?>
 
 		<!-- Txt Wav -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/txt.wav/1.0.5/js/txt.wav.min.js"></script>
+		<script src="../assets/js/vendor/txt.wav.js"></script>
 
 		<script>
 			// inline loadJS

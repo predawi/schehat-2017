@@ -22,6 +22,7 @@ function activateMagnetism (mediaQuery) {
     $.scrollify({
       section: '.magnetic',
       scrollSpeed: 700,
+      setHeights: false,
       before: function () {
         if ($.scrollify.currentIndex() > 0) {
           $('body').addClass('scrolled')
@@ -34,13 +35,19 @@ function activateMagnetism (mediaQuery) {
         } else {
           $('body').removeClass('lastScroll')
         }
+        $('.magnetic').removeClass('current')
+        $.scrollify.current().addClass('current')
       }
     })
   }
 }
 
-$('#next-project').on('click', function (e) {
-  $.scrollify.next()
+/**
+ * [data-nav] Scroll to section on click in main nav
+ */
+$('[data-nav]').on('click', function (e) {
+  if ($(this).data('nav') === 'work') $.scrollify.move(1)
   e.preventDefault()
 })
-$.scrollify.next()
+
+module.exports = activateMagnetism

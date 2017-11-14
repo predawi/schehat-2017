@@ -5,6 +5,20 @@
         @media screen and (min-width: $desktop-small) {
             position: relative;
             width: 100%; height: 100vh;
+            min-height: 700px;
+            margin-bottom: 100px;
+            &.current:not(.intro) {
+                margin-bottom: -150px;
+            }
+            &.intro {
+                margin-bottom: 0;
+                transition: height .5s cubic-bezier(0.22, 0.61, 0.35, 0.98);
+                transition-delay: .8s;
+                .zoomed & {
+                    min-height: 0;
+                    height: calc( 50vh - 228px );
+                }
+            }
         }
     }
 }

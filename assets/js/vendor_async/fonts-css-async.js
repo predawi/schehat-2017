@@ -14,13 +14,15 @@ I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",m
 
 
 // detect loading of fonts using fontfaceobserver
-var Phosphate = new FontFaceObserver("Phosphate");
-var Dinpro = new FontFaceObserver("Dinpro");
+var Zefani = new FontFaceObserver("Zefani");
+var PeaceSans = new FontFaceObserver("PeaceSans");
+var Gradual = new FontFaceObserver("Gradual");
+var Bebas = new FontFaceObserver("Bebas");
 
 //Fallback condition for non Promise ready browsers
 if ( typeof Promise !== "undefined" ) {
 	//Load any fonts you want
-	Promise.all([Phosphate.load(), Dinpro.load()]).then(function () {
+	Promise.all([Zefani.load(), PeaceSans.load(), Gradual.load(), Bebas.load()]).then(function () {
 		//Add class when fonts are loaded
 		document.documentElement.classList.remove('fonts-loading');
 		// set mark on storage for future page views

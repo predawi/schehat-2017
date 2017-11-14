@@ -4,10 +4,13 @@
 
 // Dependencies
 var $ = require('jquery')
+var activateMagnetism = require('./scroll')
+
 // var initWater = require('./water')
 require('../vendor/magnetic-scroll')
 
 var dataProject, dataBg, projects
+var mediaQuery = window.matchMedia('(min-width: 1024px)')
 
 projects = $('.project-link')
 
@@ -19,6 +22,7 @@ projects.on('click', function (e) {
 
   // Set project img in background
   // initWater(dataBg)
+  $('#background-holder').css('background-image', 'url(../assets/img/' + dataBg + ')')
 
   // Prepare zoom state
   $('body').addClass('zoomed')
@@ -50,15 +54,14 @@ $('#close-project').on('click', function (e) {
   $('#project-zoom-tpl').fadeOut().removeClass('active')
   $('[data-zoom]').fadeOut()
   // Remove project img
+  $('#background-holder').css('background-image', 'none')
   // Show projects preview
   $('#projects-wrapper').fadeIn()
   // Remove zoomed state
   $('body').removeClass('zoomed')
   // Init scrollify
-  $.scrollify({
-    section: '.magnetic',
-    scrollSpeed: 700
-  })
+  // Test media query
+  activateMagnetism(mediaQuery)
 
   e.preventDefault()
 })

@@ -104,17 +104,16 @@ require( dirname( __FILE__ ) . '/functions/_init.php' );
 
 			<div class="header__logo">
 				<a href="01-home.php" class="header__logo-link">
-					<svg class="header__icon icon icon-sarah-chehat-logo" aria-hidden="true" role="img">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-sarah-chehat-logo"></use>
-					</svg>
+					<span>Sarah</span>
+					<span>Norrsken</span>
 				</a>
 			</div>
 
 			<nav id="menu" class="menu menu__mobile" role="navigation" tabindex="-1" aria-label="Navigation Principal">
 				<div class="container">
 					<ul class="sf-menu">
-						<li><a href="#">Work</a></li>
-						<li><a href="#">Home</a></li>
+						<li><a href="#" data-nav="work">Work</a></li>
+						<li><a href="#" data-nav="about">About</a></li>
 					</ul>
 				</div>
 			</nav>

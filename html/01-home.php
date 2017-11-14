@@ -8,10 +8,35 @@
 		<!-- Intro -->
 		<section id="intro" class="section--full intro magnetic">
 			<h1 class="intro__title">
-				<span class="txtwav slow">DIGITAL</span>&nbsp;<br>
-				<span class="txtwav slow">Art direction</span>&nbsp;<br>
-				<span class="txtwav slow">& production</span>&nbsp;<br>
-				<span class="txtwav slow">made with</span>
+				<!-- Digital -->
+				<span class="txtwav slow" data-font="font-bebas">
+					Digital
+				</span>&nbsp;<br>
+				<!-- Art direction -->
+				<span class="txtwav slow" data-font="font-peacesans">
+					Art
+				</span>&nbsp;
+				<span class="txtwav slow" data-font="font-gradual">
+					direction
+				</span>&nbsp;<br>
+				<!-- & visual -->
+				<span class="txtwav slow" data-font="font-zefani">
+					&
+				</span>&nbsp;
+				<span class="txtwav slow" data-font="font-peacesans">
+					visual
+				</span>&nbsp;<br>
+				<!-- Production -->
+				<span class="txtwav slow" data-font="font-gradual">
+					production
+				</span>&nbsp;<br>
+				<!-- Made with -->
+				<span class="txtwav slow" data-font="font-peacesans">
+					made
+				</span>&nbsp;
+				<span class="txtwav slow" data-font="font-bebas">
+					with
+				</span>&nbsp;<br>
 			</h1>
 		</section>
 
@@ -37,7 +62,6 @@
 					<div class="project__img">
 						<a href="#" class="project-link" data-project="project-01" data-bg="sample/gq-image.jpg">
 							<?php echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
-							<!--img src="http://placehold.it/760x430" alt=""-->
 						</a>
 					</div>
 				</div>
@@ -64,7 +88,6 @@
 					<div class="project__img">
 						<a href="#" class="project-link" data-project="project-02" data-bg="sample/gq-image.jpg">
 							<?php echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
-							<!--img src="http://placehold.it/760x430" alt=""-->
 						</a>
 					</div>
 				</div>
@@ -91,13 +114,11 @@
 					<div class="project__img">
 						<a href="#" class="project-link" data-project="project-03" data-bg="">
 							<?php echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
-							<!--img src="http://placehold.it/760x430" alt=""-->
 						</a>
 					</div>
 				</div>
 			</section>
 
-			<a href="#" class="next-project base-cta" id="next-project">Next</a>
 		</div>
 	</div>
 

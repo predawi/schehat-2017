@@ -1,6 +1,13 @@
-//Dinpro for body text
-@include declare-font-face("Dinpro", "#{$fonts-url}/dinpro/DINPro-light"); //regularx300
-@include declare-font-face("Dinpro", "#{$fonts-url}/dinpro/DINPro-Medium", 500); //mediumx500
+// Gradual
+@include declare-font-face("Gradual", "#{$fonts-url}/gradual/gradual-light"); //lightx300
+@include declare-font-face("Gradual", "#{$fonts-url}/gradual/gradual-regular", 400); //regularx400
+@include declare-font-face("Gradual", "#{$fonts-url}/gradual/gradual-bold", 700); //boldx700
 
-//Phosphate for Hn
-@include declare-font-face("Phosphate", "#{$fonts-url}/phosphate/PhosphateSolid"); //regular
+// Bebas
+@include declare-font-face("Bebas", "#{$fonts-url}/bebas/BebasNeue"); //regular
+
+// PeaceSans
+@include declare-font-face("PeaceSans", "#{$fonts-url}/peacesans/peacesans"); //regular
+
+// Zefani
+@include declare-font-face("Zefani", "#{$fonts-url}/zefani/zefani"); //regular
