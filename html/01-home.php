@@ -60,7 +60,7 @@
 					</div>
 
 					<div class="project__img">
-						<a href="#" class="project-link" data-project="project-01" data-bg="sample/gq-image.jpg">
+						<a href="#" class="project-link" data-project="project-01" data-bg="#FF5B2C">
 							<?php echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
 						</a>
 					</div>
@@ -86,7 +86,7 @@
 					</div>
 
 					<div class="project__img">
-						<a href="#" class="project-link" data-project="project-02" data-bg="sample/gq-image.jpg">
+						<a href="#" class="project-link" data-project="project-02" data-bg="#FF5B2C">
 							<?php echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
 						</a>
 					</div>
@@ -112,7 +112,7 @@
 					</div>
 
 					<div class="project__img">
-						<a href="#" class="project-link" data-project="project-03" data-bg="">
+						<a href="#" class="project-link" data-project="project-03" data-bg="#FF5B2C">
 							<?php echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
 						</a>
 					</div>
@@ -123,11 +123,43 @@
 	</div>
 
 	<div id="project-zoom-tpl" class="project-zoom-tpl">
-		<a href="#" class="close-project base-cta" id="close-project">Back</a>
 
 		<!--canvas id="canvas"></canvas-->
 
 		<div class="project-zoom" data-zoom="project-01">
+			<div class="project-slide">
+				<video width="760" height="" muted loop>
+					<source src="../assets/img/videos/gq1.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="project-slide">
+				<video width="760" height="" muted loop>
+					<source src="../assets/img/videos/gq2.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="project-slide">
+				<video width="760" height="" muted loop>
+					<source src="../assets/img/videos/gq3.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="project-slide">
+				<video width="760" height="" muted loop>
+					<source src="../assets/img/videos/gq4.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<div class="project-slide">
+				<video width="760" height="" muted loop>
+					<source src="../assets/img/videos/gq5.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</div>
+
+		<div class="project-zoom" data-zoom="project-02">
 			<div class="project-slide">
 				<img src="http://placehold.it/760x456" alt="">
 			</div>
@@ -139,7 +171,7 @@
 			</div>
 		</div>
 
-		<div class="project-zoom" data-zoom="project-02">
+		<div class="project-zoom" data-zoom="project-03">
 			<div class="project-slide">
 				<img src="http://placehold.it/760x456" alt="">
 			</div>

@@ -112,8 +112,9 @@ require( dirname( __FILE__ ) . '/functions/_init.php' );
 			<nav id="menu" class="menu menu__mobile" role="navigation" tabindex="-1" aria-label="Navigation Principal">
 				<div class="container">
 					<ul class="sf-menu">
-						<li><a href="#" data-nav="work">Work</a></li>
-						<li><a href="#" data-nav="about">About</a></li>
+						<li><a href="#" class="link-w-veil" data-nav="work" id="nav-work"><span>Work</span></a></li>
+						<li><a href="#" class="link-w-veil" id="back-to-work" id="nav-back-to-work"><span>Back to work</span></a></li>
+						<li><a href="#" class="link-w-veil" data-nav="about" id="nav-about"><span>About</span></a></li>
 					</ul>
 				</div>
 			</nav>

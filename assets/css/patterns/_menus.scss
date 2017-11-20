@@ -64,10 +64,9 @@
 			font-weight: 700;
 			text-transform: uppercase;
 			&>a {
-				display: block;
-				@include hover {
-					color:$lightcolor;
-					background:$maincolor;
+				display: inline-block;
+				.zoomed & {
+					color: $lightcolor;
 				}
 			}
 			@include hover {
@@ -87,6 +86,7 @@
 			&>li {
 				display: block;
 				position: relative;
+				text-align: right;
 				@include hover {
 					ul {
 						top: 40px;
@@ -97,5 +97,16 @@
 				}
 			}
 		}
+	}
+}
+#nav-work {
+	.zoomed & {
+		display: none;
+	}
+}
+#back-to-work {
+	display: none;
+	.zoomed & {
+		display: block;
 	}
 }
