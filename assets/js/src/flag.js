@@ -8,7 +8,7 @@ var flag = function () {
   let accuracy = 1
 
   let opts = {
-    image: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/39255/face.png',
+    image: 'face.png',
     gravity: 200,
     friction: 0.99,
     bounce: 0.3,
@@ -16,11 +16,7 @@ var flag = function () {
     pointsY: 22,
     renderCloth: true,
     mouseInfluence: 35,
-    pinCorners: true,
-    randomImage () {
-      this.image = 'https://unsplash.it/400/400?image=' + Math.floor(Math.random() * 1100)
-      loadTexture()
-    }
+    pinCorners: true
   }
 
   let canvas = document.createElement('canvas')
