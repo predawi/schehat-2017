@@ -4,6 +4,7 @@
 	<!-- Background holder -->
 	<div class="background-holder" id="background-holder"></div>
 
+	<!-- MAIN -->
 	<div class="main" id="main">
 		<!-- Intro -->
 		<section id="intro" class="section--full intro magnetic">
@@ -40,6 +41,7 @@
 			</h1>
 		</section>
 
+		<!-- Projects previews -->
 		<div class="projects-wrapper" id="projects-wrapper">
 			<!-- Project 01 -->
 			<section id="project-01" class="section--full project magnetic">
@@ -73,7 +75,7 @@
 					<div class="project__metas">
 						<div class="project__metas__item">
 							<span>Client</span>
-							GQ France
+							M6 Pub
 						</div>
 						<div class="project__metas__item">
 							<span>Project</span>
@@ -86,7 +88,7 @@
 					</div>
 
 					<div class="project__img">
-						<a href="#" class="project-link" data-project="project-02" data-bg="#FF5B2C">
+						<a href="#" class="project-link" data-project="project-02" data-bg="#65899C">
 							<?php echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
 						</a>
 					</div>
@@ -99,7 +101,7 @@
 					<div class="project__metas">
 						<div class="project__metas__item">
 							<span>Client</span>
-							GQ France
+							Ebay
 						</div>
 						<div class="project__metas__item">
 							<span>Project</span>
@@ -112,75 +114,34 @@
 					</div>
 
 					<div class="project__img">
-						<a href="#" class="project-link" data-project="project-03" data-bg="#FF5B2C">
+						<a href="#" class="project-link" data-project="project-03" data-bg="#8B7EBE">
 							<?php echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
 						</a>
 					</div>
 				</div>
 			</section>
-
 		</div>
 	</div>
 
+	<!-- Projects details -->
 	<div id="project-zoom-tpl" class="project-zoom-tpl">
+		<?php include 'project-01.php'; ?>
+		<?php include 'project-02.php'; ?>
+		<?php include 'project-03.php'; ?>
+	</div>
 
-		<!--canvas id="canvas"></canvas-->
-
-		<div class="project-zoom" data-zoom="project-01">
-			<div class="project-slide">
-				<video width="760" height="" muted loop>
-					<source src="../assets/img/videos/gq1.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div>
-			<div class="project-slide">
-				<video width="760" height="" muted loop>
-					<source src="../assets/img/videos/gq2.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div>
-			<div class="project-slide">
-				<video width="760" height="" muted loop>
-					<source src="../assets/img/videos/gq3.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div>
-			<div class="project-slide">
-				<video width="760" height="" muted loop>
-					<source src="../assets/img/videos/gq4.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div>
-			<div class="project-slide">
-				<video width="760" height="" muted loop>
-					<source src="../assets/img/videos/gq5.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</div>
+	<!-- About section -->
+	<div id="about-section" class="about-section">
+		<div class="about-section__img">
+			<img src="http://placehold.it/900x768" alt="">
 		</div>
-
-		<div class="project-zoom" data-zoom="project-02">
-			<div class="project-slide">
-				<img src="http://placehold.it/760x456" alt="">
-			</div>
-			<div class="project-slide">
-				<img src="http://placehold.it/760x456" alt="">
-			</div>
-			<div class="project-slide">
-				<img src="http://placehold.it/760x456" alt="">
-			</div>
-		</div>
-
-		<div class="project-zoom" data-zoom="project-03">
-			<div class="project-slide">
-				<img src="http://placehold.it/760x456" alt="">
-			</div>
-			<div class="project-slide">
-				<img src="http://placehold.it/760x456" alt="">
-			</div>
-			<div class="project-slide">
-				<img src="http://placehold.it/760x456" alt="">
-			</div>
+		<div class="about-section__chat" cf-context>
+			<form id="cf-form" cf-form>
+				<fieldset>
+					<label for="name">What's your name?</label>
+					<input required="" cf-questions="Hi there! What's your name? 😊" type="text" class="form-control" name="name" id="name" tabindex="-1">
+				</fieldset>
+			</form>
 		</div>
 	</div>
 

@@ -95,8 +95,11 @@ function setWaypoints (mediaQuery, dataProject) {
       // Attach waypoint to circles
       waypoint[index] = new Waypoint({
         element: $(this),
-        offset: 500,
+        offset: '50%',
         handler: function () {
+          $('[data-zoom="' + dataProject + '"] video').each(function (index) {
+            $(this)[0].pause()
+          })
           elStrat[index][0].play()
         }
       })

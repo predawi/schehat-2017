@@ -95,6 +95,8 @@ require( dirname( __FILE__ ) . '/functions/_init.php' );
 		<script type="text/javascript" src="../assets/js/vendor_async/modernizr.custom.min.js"></script>
 		<!-- jQuery -->
 		<script src="../assets/js/vendor/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+		<!-- Conversationnal form -->
+		<script type="text/javascript" src="https://cf-4053.kxcdn.com/conversational-form/0.9.6/conversational-form.min.js" crossorigin></script>
 
 	</head>
 	<body itemscope itemtype="http://schema.org/WebPage" class="<?php echo $class; ?>">

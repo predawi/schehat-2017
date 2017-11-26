@@ -65,7 +65,8 @@
 			text-transform: uppercase;
 			&>a {
 				display: inline-block;
-				.zoomed & {
+				.zoomed &,
+				.chatting & {
 					color: $lightcolor;
 				}
 			}

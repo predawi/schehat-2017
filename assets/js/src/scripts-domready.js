@@ -4,6 +4,10 @@
 // Dependencies
 // const $ = require('jquery')
 
-// $(document).ready(function () {
-//   console.log('DOM Ready')
-// })
+$(document).ready(function () {
+  $('#nav-about').on('click', function (e) {
+    $('body').addClass('chatting')
+
+    e.preventDefault()
+  })
+})
