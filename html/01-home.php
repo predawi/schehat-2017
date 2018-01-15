@@ -10,32 +10,32 @@
 		<section id="intro" class="section--full intro magnetic">
 			<h1 class="intro__title">
 				<!-- Digital -->
-				<span class="txtwav slow" data-font="font-bebas">
+				<span class="txtwav slow" data-font="font-peacesans">
 					Digital
 				</span>&nbsp;<br>
 				<!-- Art direction -->
 				<span class="txtwav slow" data-font="font-peacesans">
 					Art
 				</span>&nbsp;
-				<span class="txtwav slow" data-font="font-gradual">
+				<span class="txtwav slow" data-font="font-peacesans">
 					direction
 				</span>&nbsp;<br>
 				<!-- & visual -->
-				<span class="txtwav slow" data-font="font-zefani">
+				<span class="txtwav slow" data-font="font-peacesans">
 					&
 				</span>&nbsp;
 				<span class="txtwav slow" data-font="font-peacesans">
 					visual
 				</span>&nbsp;<br>
 				<!-- Production -->
-				<span class="txtwav slow" data-font="font-gradual">
+				<span class="txtwav slow" data-font="font-peacesans">
 					production
 				</span>&nbsp;<br>
 				<!-- Made with -->
 				<span class="txtwav slow" data-font="font-peacesans">
 					made
 				</span>&nbsp;
-				<span class="txtwav slow" data-font="font-bebas">
+				<span class="txtwav slow" data-font="font-peacesans">
 					with
 				</span>&nbsp;<br>
 			</h1>
@@ -135,13 +135,37 @@
 		<div class="about-section__img">
 			<img src="http://placehold.it/900x768" alt="">
 		</div>
-		<div class="about-section__chat" cf-context>
-			<form id="cf-form" cf-form>
-				<fieldset>
-					<label for="name">What's your name?</label>
-					<input required="" cf-questions="Hi there! What's your name? 😊" type="text" class="form-control" name="name" id="name" tabindex="-1">
-				</fieldset>
-			</form>
+
+		<div class="about-section__side">
+			<div class="about-section__text">
+				<p>Freelance art director based in Paris with over 7 years experience, I’ve been working for startups and international brands in media, culture, fashion and luxury sectors. My personnal style is all about colors, playing with type and making crispy animations. Want to know more about me or to talk about your new project ? Drop a line below to my alter-ego bot :)</p>
+
+				<a href="#" class="about-section__link">Twitter</a>
+				<a href="#" class="about-section__link">Instagram</a>
+
+				<ul class="about-section__tags">
+					<li>Art direction</li>
+					<li>Photo & Film</li>
+					<li>Illustration</li>
+					<li>Motiondesign</li>
+					<li>Visual identity</li>
+					<li>UI design</li>
+				</ul>
+			</div>
+
+			<div class="about-section__chat" cf-context>
+				<form id="cf-form" cf-form class="visuallyhidden">
+					<fieldset>
+						<label for="name">Hello handsome, what’s your name ?</label>
+						<input required="" cf-questions="Hello handsome, what’s your name ?" type="text" class="form-control" name="name" id="name" tabindex="-1">
+					</fieldset>
+
+					<fieldset>
+						<label for="surname">Hello handsome, what’s your name ?</label>
+						<input required="" cf-questions="Hello handsome, what’s your name ?" type="text" class="form-control" name="surname" id="surname" tabindex="-1">
+					</fieldset>
+				</form>
+			</div>
 		</div>
 	</div>
 

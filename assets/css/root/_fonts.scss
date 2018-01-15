@@ -11,3 +11,10 @@
 
 // Zefani
 @include declare-font-face("Zefani", "#{$fonts-url}/zefani/zefani"); //regular
+
+// Helvetica Neue
+@include declare-font-face("HelveticaNeue", "#{$fonts-url}/helvetica/HelveticaNeueRoman"); //regular
+@include declare-font-face("HelveticaNeue", "#{$fonts-url}/helvetica/HelveticaNeueBlackExtended", 700); //boldx700
+
+// BWGradual
+@include declare-font-face("BWGradual", "#{$fonts-url}/bwgradual/BwGradual-Regular"); //regular

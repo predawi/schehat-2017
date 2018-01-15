@@ -81,7 +81,7 @@ $('#back-to-work').on('click', function (e) {
   // Test media query
   setTimeout(function () {
     activateMagnetism(mediaQuery)
-  }, 1000)
+  }, 1500)
 
   e.preventDefault()
 })

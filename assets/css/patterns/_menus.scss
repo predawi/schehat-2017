@@ -59,9 +59,10 @@
 		margin: 0;
 		@include clearfix;
 		&>li {
-			line-height: 21px;
-			font-size: 12px;
+			line-height: 17px;
+			font-family: $customfont-5;
 			font-weight: 700;
+			font-size: 12px;
 			text-transform: uppercase;
 			&>a {
 				display: inline-block;

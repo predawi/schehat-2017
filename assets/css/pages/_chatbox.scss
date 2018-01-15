@@ -1,6 +1,8 @@
-.conversational-form {
-	font-family: Helvetica Neue, Helvetica;
-	font-style: normal;
+.about-section {
+	.conversational-form {
+		font-family: $customfont-6;
+		font-weight: 300;
+		font-size: 13px;
 		@media screen and (min-width: $desktop-small) {
 			width: 550px;
 		}
@@ -9,6 +11,8 @@
 		width: 0px;
 	}
 	.conversational-form cf-chat-response {
+		width: 100%;
+		max-width: 100%;
 		padding-top: 0px;
 		min-width: 200px;
 	}
@@ -19,12 +23,23 @@
 	}
 	.conversational-form cf-chat-response text {
 		font-weight: 900;
-		min-height: 42px;
+		min-height: 62px;
 		font-size: 13px;
 	}
 	.conversational-form cf-chat-response thumb {
-		height: 42px;
-		width: 42px;
+		height: 62px;
+		width: 62px;
+		background-repeat: no-repeat;
+	}
+	.conversational-form cf-chat-response.robot thumb {
+		background-color: $altcolor;
+		background-image: url('#{$images-url}/fire.svg') !important;
+		background-size: 32px 32px;
+	}
+	.conversational-form cf-chat-response.user thumb {
+		background-color: #ebebeb;
+		background-image: url('#{$images-url}/alien.svg') !important;
+		background-size: 32px 44px;
 	}
 	.conversational-form cf-chat-response thumb > p {
 		background-color: #ebebeb;
@@ -33,51 +48,44 @@
 		margin-bottom: 10px;
 	}
 	.conversational-form cf-chat-response.robot {
-		padding-left: 48px;
+		padding-left: 68px;
 	}
 	.conversational-form cf-chat-response.robot text {
 		color: #222;
 	}
 	.conversational-form cf-chat-response.robot text > p {
-		border-radius: 4px 20px 20px 20px;
-		background: #ebebeb;
-	}
-	.conversational-form cf-chat-response.robot text > p:not(:only-child):first-child {
-		border-radius: 20px 20px 20px 4px;
-	}
-	.conversational-form cf-chat-response.robot text > p:not(:only-child):last-child {
-		border-radius: 4px 20px 20px 20px;
-	}
-	.conversational-form cf-chat-response.robot thumb {
-		background-color: #ebebeb;
-		background-size: 20px 20px;
-		background-repeat: no-repeat;
-	}
-	.conversational-form cf-chat-response.user {
-		padding-right: 48px;
-	}
-	.conversational-form cf-chat-response.user text {
-		color: #fff;
+		width: 100%;
+		margin: 6px 0 0;
+		padding: 16px 24px;
+		border-radius: 0px 100px 100px 150px;
+		background: $altcolor;
+		color: $lightcolor;
 	}
 	.conversational-form cf-chat-response.user text > p {
-		background: #222;
-		border-radius: 20px 4px 20px 20px;
+		width: 100%;
+		margin: 6px 0 0;
+		padding: 16px 24px;
+		border-radius: 150px 0 100px 100px;
+		background: #F2F3F6;
 	}
-	.conversational-form cf-chat-response.user thumb {
-		background-color: #222;
-		background-size: 20px 16px;
-		background-repeat: no-repeat;
-		background-position: 11px 12px;
+	.conversational-form cf-chat-response.user {
+		padding-right: 68px;
+	}
+	.conversational-form cf-chat-response.user text {
+		color: $altcolor;
 	}
 	.conversational-form cf-input input,
 	.conversational-form cf-input textarea {
 		border-radius: 40px;
 		min-height: 57px;
-		font-size: 14px;
 		padding: 19px 60px 19px 30px;
 		height: 56px;
-		color: rgba(34,34,34,0.4);
-		font-weight: 900;
+		font-size: 14px;
+		font-weight: 300;
+		font-family: $customfont-6;
+		color: $customfont-6;
+		background: #F2F3F6;
+		border-color: transparent;
 	}
 	@media only screen and (min-width: 769px) {
 		.conversational-form cf-input input,
@@ -117,7 +125,7 @@
 		color: #222;
 		border-color: #ddd;
 		transition: opacity 0.75s cubic-bezier(0.215, 0.61, 0.355, 1), border-color 0.75s cubic-bezier(0.215, 0.61, 0.355, 1), color 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
-		background: none !important;
+		background: none;
 		font-weight: 900;
 		line-height: 1.2;
 	}
@@ -149,3 +157,4 @@
 		height: 5px;
 		border-radius: 50%;
 	}
+}
