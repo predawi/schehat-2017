@@ -4,17 +4,15 @@
 
 // Dependencies
 var $ = require('jquery')
-var activateMagnetism = require('./scroll')
 var waypoint = require('../vendor/waypoint')
 
 // var initWater = require('./water')
-require('../vendor/magnetic-scroll')
 
 var dataProject, dataBg, projects
 var mediaQuery = window.matchMedia('(min-width: 1024px)')
 mediaQuery.addListener(setWaypoints)
 
-projects = $('.project-link')
+projects = $('.project__link')
 
 // Click on project
 projects.on('click', function (e) {
@@ -28,8 +26,6 @@ projects.on('click', function (e) {
 
   // Prepare zoom state
   $('body').addClass('zoomed')
-  // Prevent Scrollify
-  $.scrollify.destroy()
 
   setTimeout(function () {
     // Hide projects thumbs
@@ -77,11 +73,6 @@ $('#back-to-work').on('click', function (e) {
   $('#projects-wrapper').fadeIn()
   // Remove zoomed state
   $('body').removeClass('zoomed')
-  // Init scrollify
-  // Test media query
-  setTimeout(function () {
-    activateMagnetism(mediaQuery)
-  }, 1500)
 
   e.preventDefault()
 })

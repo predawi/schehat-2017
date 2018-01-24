@@ -5,7 +5,7 @@
     z-index: 0;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: $altcolor;
+    background: $homecolor;
     transition: all .3s ease-in-out;
 }
 .main {
@@ -22,14 +22,36 @@
     .zoomed & {
         opacity: 0;
     }
+    &--behind {
+        z-index: 1;
+        opacity: 0;
+        .scrolled & {
+            opacity: 1;
+        }
+    }
+    &--above {
+        z-index: 4;
+        .scrolled & {
+            opacity: 0;
+        }
+    }
 }
 .intro__title {
+    position: relative;
     display: inline-block;
     letter-spacing: 8.5px;
     text-align: left;
-    color: $maincolor;
+    color: $lightcolor;
     text-transform: uppercase;
     text-align: center;
+    .fire {
+        position: absolute;
+        bottom: -2px; right: 30px;
+        img {
+            max-width: 60px;
+            height: auto;
+        }
+    }
     @media screen and (min-width: $desktop-small) {
         margin: auto;
         line-height: 65px;
@@ -45,8 +67,8 @@
     }
 }
 .font-peacesans {
-    letter-spacing: 10.78px;
-    font-size: 70px;
+    letter-spacing: 3.78px;
+    font-size: 80px;
     font-family: $customfont-2;
     font-weight: 300;
     @media screen and (min-width: $desktop-small) {

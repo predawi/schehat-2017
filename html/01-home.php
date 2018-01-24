@@ -7,7 +7,7 @@
 	<!-- MAIN -->
 	<div class="main" id="main">
 		<!-- Intro -->
-		<section id="intro" class="section--full intro magnetic">
+		<section id="intro" class="section--full intro intro--behind">
 			<h1 class="intro__title">
 				<!-- Digital -->
 				<span class="txtwav slow" data-font="font-peacesans">
@@ -38,88 +38,96 @@
 				<span class="txtwav slow" data-font="font-peacesans">
 					with
 				</span>&nbsp;<br>
+				<div class="fire">
+					<img src="../assets/img/fire.gif" alt="" class="lazyload">
+				</div>
+			</h1>
+		</section>
+
+		<section id="intro" class="section--full intro intro--above">
+			<h1 class="intro__title">
+				<!-- Digital -->
+				<span class="txtwav slow" data-font="font-peacesans">
+					Digital
+				</span>&nbsp;<br>
+				<!-- Art direction -->
+				<span class="txtwav slow" data-font="font-peacesans">
+					Art
+				</span>&nbsp;
+				<span class="txtwav slow" data-font="font-peacesans">
+					direction
+				</span>&nbsp;<br>
+				<!-- & visual -->
+				<span class="txtwav slow" data-font="font-peacesans">
+					&
+				</span>&nbsp;
+				<span class="txtwav slow" data-font="font-peacesans">
+					visual
+				</span>&nbsp;<br>
+				<!-- Production -->
+				<span class="txtwav slow" data-font="font-peacesans">
+					production
+				</span>&nbsp;<br>
+				<!-- Made with -->
+				<span class="txtwav slow" data-font="font-peacesans">
+					made
+				</span>&nbsp;
+				<span class="txtwav slow" data-font="font-peacesans">
+					with
+				</span>&nbsp;<br>
+				<div class="fire">
+					<img src="../assets/img/fire.gif" alt="" class="lazyload">
+				</div>
 			</h1>
 		</section>
 
 		<!-- Projects previews -->
 		<div class="projects-wrapper" id="projects-wrapper">
-			<!-- Project 01 -->
-			<section id="project-01" class="section--full project magnetic">
-				<div class="container">
-					<div class="project__metas">
-						<div class="project__metas__item">
-							<span>Client</span>
-							GQ France
-						</div>
-						<div class="project__metas__item">
-							<span>Project</span>
-							IOS Application
-						</div>
-						<div class="project__metas__item">
-							<span>Role</span>
-							Art Direction
-						</div>
-					</div>
-
+			<!-- Col left -->
+			<div class="projects-wrapper__col projects-wrapper__col--left">
+				<!-- Project 01 -->
+				<section id="project-01" class="project">
+					<h2 class="project__title">GQ <br>France</h2>
 					<div class="project__img">
-						<a href="#" class="project-link" data-project="project-01" data-bg="#FF5B2C">
-							<?php echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
+						<a href="#" class="project__link" data-project="project-01" data-bg="#FF5B2C">
+							<img src="../assets/img/thumb-gq.jpg" alt="">
 						</a>
 					</div>
-				</div>
-			</section>
+				</section>
 
-			<!-- Project 02 -->
-			<section id="project-02" class="section--full project magnetic">
-				<div class="container">
-					<div class="project__metas">
-						<div class="project__metas__item">
-							<span>Client</span>
-							M6 Pub
-						</div>
-						<div class="project__metas__item">
-							<span>Project</span>
-							IOS Application
-						</div>
-						<div class="project__metas__item">
-							<span>Role</span>
-							Art Direction
-						</div>
-					</div>
-
+				<!-- Project 03 -->
+				<section id="project-03" class="project">
+					<h2 class="project__title">Ebay</h2>
 					<div class="project__img">
-						<a href="#" class="project-link" data-project="project-02" data-bg="#65899C">
-							<?php echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
+						<a href="#" class="project__link" data-project="project-03" data-bg="#8B7EBE">
+							<img src="../assets/img/thumb-ebay.gif" alt="">
 						</a>
 					</div>
-				</div>
-			</section>
+				</section>
+			</div>
 
-			<!-- Project 03 -->
-			<section id="project-03" class="section--full project magnetic">
-				<div class="container">
-					<div class="project__metas">
-						<div class="project__metas__item">
-							<span>Client</span>
-							Ebay
-						</div>
-						<div class="project__metas__item">
-							<span>Project</span>
-							IOS Application
-						</div>
-						<div class="project__metas__item">
-							<span>Role</span>
-							Art Direction
-						</div>
-					</div>
-
+			<!-- Col right -->
+			<div class="projects-wrapper__col projects-wrapper__col--right">
+				<!-- Project 02 -->
+				<section id="project-02" class="project">
+					<h2 class="project__title">M6 <br>Publicité</h2>
 					<div class="project__img">
-						<a href="#" class="project-link" data-project="project-03" data-bg="#8B7EBE">
-							<?php echo get_the_post_thumbnail( 0, 'gq-image', array( 'data-location' => 'project-thumb', 'alt' => '#' ) ); ?>
+						<a href="#" class="project__link" data-project="project-02" data-bg="#65899C">
+							<img src="../assets/img/thumb-m6pub.gif" alt="">
 						</a>
 					</div>
-				</div>
-			</section>
+				</section>
+
+				<!-- Project 04 -->
+				<section id="project-02" class="project">
+					<h2 class="project__title">Basalte</h2>
+					<div class="project__img">
+						<a href="#" class="project__link" data-project="project-02" data-bg="#65899C">
+							<img src="../assets/img/thumb-basalte.jpg" alt="">
+						</a>
+					</div>
+				</section>
+			</div>
 		</div>
 	</div>
 
@@ -140,8 +148,8 @@
 			<div class="about-section__text">
 				<p>Freelance art director based in Paris with over 7 years experience, I’ve been working for startups and international brands in media, culture, fashion and luxury sectors. My personnal style is all about colors, playing with type and making crispy animations. Want to know more about me or to talk about your new project ? Drop a line below to my alter-ego bot :)</p>
 
-				<a href="#" class="about-section__link">Twitter</a>
-				<a href="#" class="about-section__link">Instagram</a>
+				<a href="https://www.instagram.com/snorrsken/" target="_blank" class="about-section__link">Twitter</a>
+				<a href="https://www.instagram.com/snorrsken/" target="_blank" class="about-section__link">Instagram</a>
 
 				<ul class="about-section__tags">
 					<li>Art direction</li>
@@ -154,15 +162,27 @@
 			</div>
 
 			<div class="about-section__chat" cf-context>
-				<form id="cf-form" cf-form class="visuallyhidden">
+				<form id="cf-form" class="visuallyhidden">
 					<fieldset>
 						<label for="name">Hello handsome, what’s your name ?</label>
 						<input required="" cf-questions="Hello handsome, what’s your name ?" type="text" class="form-control" name="name" id="name" tabindex="-1">
 					</fieldset>
 
+					<fieldset cf-questions="Nice to meet you {previous-answer}, what do you want to chat about ?">
+						<label for="subject">Nice to meet you, what do you want to chat about ?</label>
+						<input type="checkbox" name="subject" cf-label="My new project" />
+						<input type="checkbox" name="subject" cf-label="A collaboration" />
+						<input type="checkbox" name="subject" cf-label="A partnership" />
+					</fieldset>
+
 					<fieldset>
-						<label for="surname">Hello handsome, what’s your name ?</label>
-						<input required="" cf-questions="Hello handsome, what’s your name ?" type="text" class="form-control" name="surname" id="surname" tabindex="-1">
+						<label for="object">Tell me about it !</label>
+						<input required="" cf-questions="Tell me about it !" type="text" class="form-control" name="object" id="object" tabindex="-1">
+					</fieldset>
+
+					<fieldset>
+						<label for="email">Let’s stay in touch, can I have your email ?</label>
+						<input required="" cf-questions="Let’s stay in touch, can I have your email ?" type="text" class="form-control" name="email" id="email" tabindex="-1">
 					</fieldset>
 				</form>
 			</div>

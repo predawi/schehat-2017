@@ -1,28 +1,5 @@
 /* Menus
 ----------------------------------------------------------------------------------------------------*/
-.menu__fastaccess {
-	margin: 0;
-	font-size: 9px;
-	display: none;
-	li {
-		display: inline;
-		a {
-			position: absolute;
-			z-index: 1;
-			color: transparent;
-			@include hover {
-				text-decoration: none;
-				z-index: 2;
-				padding: $base-spacing / 2;
-				color: $lightcolor;
-				background-color: $maincolor;
-			}
-		}
-	}
-	@media screen and (min-width: $desktop-small) {
-		display: block;
-	}
-}
 // Mobile open/close button */
 .button__menu-open {
 	display: block;
@@ -66,6 +43,7 @@
 			text-transform: uppercase;
 			&>a {
 				display: inline-block;
+				color: $lightcolor;
 				.zoomed &,
 				.chatting & {
 					color: $lightcolor;
@@ -84,6 +62,7 @@
 		left: auto;
 		margin-top: -21px;
 		display: inline-block;
+		transition: all .5s cubic-bezier(.9, 0, 0, 1);
 		ul {
 			&>li {
 				display: block;
@@ -94,10 +73,10 @@
 						top: 40px;
 					}
 				}
-				&.sfHover {
-
-				}
 			}
+		}
+		.chatting & {
+			right: calc(550px + 4%);
 		}
 	}
 }
