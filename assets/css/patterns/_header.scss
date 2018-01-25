@@ -25,6 +25,9 @@
 	.chatting & {
 		color: $lightcolor;
 	}
+	@include hover {
+		color: $lightcolor;
+	}
 }
 .header__icon {
 	display: block;

@@ -11,8 +11,8 @@
 		width: 0px;
 	}
 	.conversational-form cf-chat-response {
-		width: 100%;
-		max-width: 100%;
+		width: auto;
+		max-width: 80%;
 		padding-top: 0px;
 		min-width: 200px;
 	}
@@ -32,12 +32,10 @@
 		background-repeat: no-repeat;
 	}
 	.conversational-form cf-chat-response.robot thumb {
-		background-color: $altcolor;
 		background-image: url('#{$images-url}/fire.svg') !important;
 		background-size: 32px 32px;
 	}
 	.conversational-form cf-chat-response.user thumb {
-		background-color: #ebebeb;
 		background-image: url('#{$images-url}/alien.svg') !important;
 		background-size: 32px 44px;
 	}
@@ -57,7 +55,7 @@
 		width: 100%;
 		margin: 6px 0 0;
 		padding: 16px 24px;
-		border-radius: 0px 100px 100px 150px;
+		border-radius: 4px 20px 20px 20px;
 		background: $altcolor;
 		color: $lightcolor;
 	}
@@ -65,7 +63,7 @@
 		width: 100%;
 		margin: 6px 0 0;
 		padding: 16px 24px;
-		border-radius: 150px 0 100px 100px;
+		border-radius: 20px 4px 20px 20px;
 		background: #F2F3F6;
 	}
 	.conversational-form cf-chat-response.user {

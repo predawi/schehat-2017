@@ -46,19 +46,49 @@
         align-items: center;
     }
     &__title {
+        position: relative;
         margin-bottom: 30px;
         font-size: 20px;
         font-family: $customfont-5;
         font-weight: 900;
         text-transform: uppercase;
+        span {
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            color: transparent;
+            transition: color .3s ease-in-out;
+            transition-delay: .3s;
+            &:after {
+                content: "";
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                right: 100%;
+                width: 100%;
+                height: 100%;
+                background: $lightcolor;
+                transition: right .5s ease-in-out;
+            }
+            &:last-of-type {
+                transition-delay: .8s;
+                &:after {
+                    transition-delay: .5s;
+                }
+            }
+        }
         @media screen and (min-width: $desktop-small) {
-            opacity: 0;
             position: absolute;
             top: 60%;
             margin: 0;
             .scrolled & {
-                opacity: 1;
-                transition: opacity .5s ease-in-out;
+                span {
+                    color: $lightcolor;
+                    &:after {
+                        right: -100%;
+                    }
+                }
             }
             .projects-wrapper__col--left & {
                 left: -50px;
