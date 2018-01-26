@@ -32,12 +32,12 @@
 		background-repeat: no-repeat;
 	}
 	.conversational-form cf-chat-response.robot thumb {
-		background-image: url('#{$images-url}/fire.svg') !important;
-		background-size: 32px 32px;
+		background-image: url('#{$images-url}/fire.gif') !important;
+		background-size: 32px auto;
 	}
 	.conversational-form cf-chat-response.user thumb {
-		background-image: url('#{$images-url}/alien.svg') !important;
-		background-size: 32px 44px;
+		background-image: url('#{$images-url}/alien.gif') !important;
+		background-size: 32px auto;
 	}
 	.conversational-form cf-chat-response thumb > p {
 		background-color: #ebebeb;

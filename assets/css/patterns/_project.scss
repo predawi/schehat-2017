@@ -98,14 +98,9 @@
             }
         }
     }
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
     &__metas {
         width: 100%;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
         text-align: center;
         opacity: 0;
         transition: all .6s ease-in-out;
@@ -134,9 +129,27 @@
             font-family: $customfont-6;
         }
     }
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transition: all .3s;
+    }
     &__link {
         display: block;
         outline: none;
+        @include hover {
+            cursor: url(#{$images-url}/cursor-hover.svg), pointer;
+            img {
+                transform: rotate(-7deg) scale(0.85);
+            }
+        }
+    }
+    &__description {
+        max-width: 490px;
+        margin: 0 auto 60px;
+        line-height: 22px;
+        font-family: $customfont-6;
     }
 }
 
@@ -153,7 +166,7 @@
 }
 .project-zoom-tpl {
     position: relative;
-    z-index: 3;
+    z-index: 0;
     #canvas {
         display: none;
         position: fixed;
@@ -169,6 +182,7 @@
         transition: all .5s ease-in-out;
         transition-delay: .6s;
         .zoomed & {
+            z-index: 3;
             display: block;
             padding-top: 13vh;
         }

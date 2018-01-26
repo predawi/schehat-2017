@@ -16,6 +16,8 @@
         </div>
     </div>
 
+    <p class="project__description">GQ France needed an IOS app for its salesmen to present the magazine’s results and assets in their meetings with ad companies . My role was to lead the design process and lorem ipsum dolor sit amet consectetur adipiscing elit nunc mergitur. </p>
+
     <div class="project-slide">
         <video width="760" height="" muted loop>
             <source src="../assets/img/videos/ebay1.mp4" type="video/mp4">

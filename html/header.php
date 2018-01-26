@@ -14,7 +14,7 @@ require( dirname( __FILE__ ) . '/functions/_init.php' );
 		<meta name="viewport" content="initial-scale=1.0" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 
-		<title>Sarah Chehat</title>
+		<title>Sarah Norrsken</title>
 
 		<!-- Web App favicons from /assets/img/favicons/index_hd.html -->
 		<link rel="manifest" href="../assets/img/favicons/manifest.json">

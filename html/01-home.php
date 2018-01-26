@@ -146,10 +146,10 @@
 
 		<div class="about-section__side">
 			<div class="about-section__text">
-				<p>Freelance art director based in Paris with over 7 years experience, I’ve been working for startups and international brands in media, culture, fashion and luxury sectors. My personnal style is all about colors, playing with type and making crispy animations. Want to know more about me or to talk about your new project ? Drop a line below to my alter-ego bot :)</p>
+				<p>Freelance art director based in Paris with over 8 years experience, I’ve been working for startups and international brands in media, culture, fashion and luxury sectors. Want to know more about me or to talk about your new project ? Drop a line below to my alter-ego bot !</p>
 
-				<a href="https://www.instagram.com/snorrsken/" target="_blank" class="about-section__link">Twitter</a>
-				<a href="https://www.instagram.com/snorrsken/" target="_blank" class="about-section__link">Instagram</a>
+				<a href="https://twitter.com/nrrskn" target="_blank" class="about-section__link link-w-veil">Twitter</a>
+				<a href="https://www.instagram.com/snorrsken/" target="_blank" class="about-section__link link-w-veil">Instagram</a>
 
 				<ul class="about-section__tags">
 					<li>Art direction</li>

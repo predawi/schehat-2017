@@ -72,6 +72,12 @@
         font-size: 10px;
         text-transform: uppercase;
         color: $altcolor;
+        &:before {
+            background: $altcolor;
+        }
+        @include hover {
+            color: $altcolor;
+        }
     }
 
 }

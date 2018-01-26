@@ -1,5 +1,8 @@
 /* Global css
  ----------------------------------------------------------------------------------------------------*/
+body {
+    cursor: url(#{$images-url}/cursor.svg), pointer;
+}
 .main {
     width: 100%;
     transition: all 1s cubic-bezier(.9, 0, 0, 1);
