@@ -83,3 +83,15 @@
 		}
 	}
 }
+
+//base animation
+@mixin animation-off {
+	position: relative;
+	top: 20px;
+	opacity: 0;
+	transition: all .3s ease-in-out;
+}
+@mixin animation-on {
+	top: 0;
+	opacity: 1;
+}

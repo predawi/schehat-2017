@@ -40,6 +40,10 @@ projects.on('click', function (e) {
   }, 400)
 
   setTimeout(function () {
+    $('body').addClass('appeared')
+  }, 500)
+
+  setTimeout(function () {
     // Reset window scroll
     window.scrollTo(0, 0)
   }, 600)
@@ -72,7 +76,7 @@ $('#back-to-work').on('click', function (e) {
   // Show projects preview
   $('#projects-wrapper').fadeIn()
   // Remove zoomed state
-  $('body').removeClass('zoomed')
+  $('body').removeClass('zoomed appeared')
 
   e.preventDefault()
 })
@@ -86,7 +90,7 @@ function setWaypoints (mediaQuery, dataProject) {
       // Attach waypoint to circles
       waypoint[index] = new Waypoint({
         element: $(this),
-        offset: '50%',
+        offset: '75%',
         handler: function () {
           $('[data-zoom="' + dataProject + '"] video').each(function (index) {
             $(this)[0].pause()

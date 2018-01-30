@@ -6,11 +6,6 @@ body {
 .main {
     width: 100%;
     transition: all 1s cubic-bezier(.9, 0, 0, 1);
-    @media screen and (min-width: $desktop-small) {
-        .chatting & {
-            width: calc(100vw - 550px);
-        }
-    }
 }
 .main__content {
     outline: none;

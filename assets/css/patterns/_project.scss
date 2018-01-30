@@ -22,11 +22,11 @@
         &--left {
             @media screen and (min-width: $desktop-small) {
                 float: left;
-                margin: 0px 1% 0 5%;
+                margin: -45px 1% 0 5%;
             }
         }
         &--right {
-            padding-top: 200px;
+            padding-top: 60px;
             @media screen and (min-width: $desktop-small) {
                 float: right;
                 margin: 0 5% 0 1%;
@@ -47,6 +47,7 @@
     }
     &__title {
         position: relative;
+        z-index: 2;
         margin-bottom: 30px;
         font-size: 20px;
         font-family: $customfont-5;
@@ -102,14 +103,12 @@
         width: 100%;
         margin-bottom: 60px;
         text-align: center;
-        opacity: 0;
+        @include animation-off;
         transition: all .6s ease-in-out;
-        transition-delay: 3s;
-        max-height: 0;
+        transition-delay: .3s;
         overflow: hidden;
-        .zoomed & {
-            opacity: 1;
-            max-height: 30px;
+        .appeared & {
+            @include animation-on;
         }
     }
     &__metas__item {
@@ -136,6 +135,8 @@
         transition: all .3s;
     }
     &__link {
+        position: relative;
+        z-index: 1;
         display: block;
         outline: none;
         @include hover {
@@ -150,6 +151,12 @@
         margin: 0 auto 60px;
         line-height: 22px;
         font-family: $customfont-6;
+        @include animation-off;
+        transition: all .6s ease-in-out;
+        transition-delay: .9s;
+        .appeared & {
+            @include animation-on;
+        }
     }
 }
 
@@ -167,24 +174,13 @@
 .project-zoom-tpl {
     position: relative;
     z-index: 0;
-    #canvas {
-        display: none;
-        position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
-        z-index: 11;
-        width: 100%; height: 100%;
-        .zoomed & {
-            display: block;
-        }
-    }
     @media screen and (min-width: $desktop-small) {
-        padding-top: 20vh;
+        padding-top: 120px;
         transition: all .5s ease-in-out;
         transition-delay: .6s;
         .zoomed & {
             z-index: 3;
             display: block;
-            padding-top: 13vh;
         }
     }
 }
@@ -196,4 +192,13 @@
 }
 .project-slide {
     margin-bottom: 100px;
+    @include animation-off;
+    transition-delay: 1.2s;
+    .appeared & {
+        @include animation-on;
+    }
+    img {
+        max-width: 760px;
+        margin: auto;
+    }
 }

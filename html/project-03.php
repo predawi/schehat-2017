@@ -8,7 +8,7 @@
         </div>
         <div class="project__metas__item">
             <span>Project</span>
-            IOS Application
+            Video campaign
         </div>
         <div class="project__metas__item">
             <span>Role</span>
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <p class="project__description">GQ France needed an IOS app for its salesmen to present the magazine’s results and assets in their meetings with ad companies . My role was to lead the design process and lorem ipsum dolor sit amet consectetur adipiscing elit nunc mergitur. </p>
+    <p class="project__description">Ebay was looking for an effective way to promote the platform to the advertisers. Here are some scenes from the video I designed for them.</p>
 
     <div class="project-slide">
         <video width="760" height="" muted loop>

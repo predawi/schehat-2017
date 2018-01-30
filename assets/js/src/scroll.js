@@ -10,6 +10,10 @@ var $ = require('jquery')
  */
 $('[data-nav]').on('click', function (e) {
   if ($(this).data('nav') === 'work') $('body').addClass('scrolled')
+  $('body').addClass('scrolled')
+  setTimeout(() => {
+    $('.intro--above').hide()
+  }, 300)
   e.preventDefault()
 
   if ($('body').hasClass('chatting')) {

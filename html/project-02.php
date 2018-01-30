@@ -4,11 +4,11 @@
     <div class="project__metas">
         <div class="project__metas__item">
             <span>Client</span>
-            M6 Pub
+            M6 Publicité
         </div>
         <div class="project__metas__item">
             <span>Project</span>
-            IOS Application
+            Website
         </div>
         <div class="project__metas__item">
             <span>Role</span>
@@ -16,7 +16,7 @@
         </div>
     </div>
 
-    <p class="project__description">Ebay asked us to make a video which could promote the platform to advertisers in a fun and colorful way. Here are some scenes I designed and animated.</p>
+    <p class="project__description">M6 Publicité needed a new visual concept for their website. I focused on a clean design, detailed micro interactions and animated illustrations in my creative proposal. Work made in my previous agency, Be API.</p>
 
     <div class="project-slide">
         <video width="760" height="" muted loop>

@@ -27,6 +27,7 @@ a {
 	text-decoration: none;
 	@include hover {
 		color: $maincolor;
+		cursor: url(#{$images-url}/cursor-hover-blue.svg), pointer;
 	}
 }
 

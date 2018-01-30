@@ -38,6 +38,7 @@
 				<span class="txtwav slow" data-font="font-peacesans">
 					with
 				</span>&nbsp;<br>
+				<span class="visuallyhidden">fire</span>
 				<div class="fire">
 					<img src="../assets/img/fire.gif" alt="" class="lazyload">
 				</div>
@@ -87,7 +88,7 @@
 			<div class="projects-wrapper__col projects-wrapper__col--left">
 				<!-- Project 01 -->
 				<section id="project-01" class="project">
-					<h2 class="project__title"><span>GQ</span> <br><span>France</span></h2>
+					<h2 class="project__title rellax" data-rellax-speed="-2"><span>GQ</span> <br><span>France</span></h2>
 					<div class="project__img">
 						<a href="#" class="project__link" data-project="project-01" data-bg="#FF5B2C">
 							<img src="../assets/img/thumb-gq.jpg" alt="">
@@ -95,12 +96,12 @@
 					</div>
 				</section>
 
-				<!-- Project 03 -->
-				<section id="project-03" class="project">
-					<h2 class="project__title"><span>Ebay</span></h2>
+				<!-- Project 04 -->
+				<section id="project-04" class="project">
+					<h2 class="project__title rellax" data-rellax-speed="-2"><span>Basalte</span></h2>
 					<div class="project__img">
-						<a href="#" class="project__link" data-project="project-03" data-bg="#8B7EBE">
-							<img src="../assets/img/thumb-ebay.gif" alt="">
+						<a href="#" class="project__link" data-project="project-04" data-bg="#121212">
+							<img src="../assets/img/thumb-basalte.jpg" alt="">
 						</a>
 					</div>
 				</section>
@@ -110,7 +111,7 @@
 			<div class="projects-wrapper__col projects-wrapper__col--right">
 				<!-- Project 02 -->
 				<section id="project-02" class="project">
-					<h2 class="project__title"><span>M6</span> <br><span>Publicité</span></h2>
+					<h2 class="project__title rellax" data-rellax-speed="-2"><span>M6</span> <br><span>Publicité</span></h2>
 					<div class="project__img">
 						<a href="#" class="project__link" data-project="project-02" data-bg="#65899C">
 							<img src="../assets/img/thumb-m6pub.gif" alt="">
@@ -118,12 +119,12 @@
 					</div>
 				</section>
 
-				<!-- Project 04 -->
-				<section id="project-02" class="project">
-					<h2 class="project__title"><span>Basalte</span></h2>
+				<!-- Project 03 -->
+				<section id="project-03" class="project">
+					<h2 class="project__title rellax" data-rellax-speed="-2"><span>Ebay</span></h2>
 					<div class="project__img">
-						<a href="#" class="project__link" data-project="project-02" data-bg="#65899C">
-							<img src="../assets/img/thumb-basalte.jpg" alt="">
+						<a href="#" class="project__link" data-project="project-03" data-bg="#8B7EBE">
+							<img src="../assets/img/thumb-ebay.gif" alt="">
 						</a>
 					</div>
 				</section>
@@ -136,6 +137,7 @@
 		<?php include 'project-01.php'; ?>
 		<?php include 'project-02.php'; ?>
 		<?php include 'project-03.php'; ?>
+		<?php include 'project-04.php'; ?>
 	</div>
 
 	<!-- About section -->
@@ -161,7 +163,7 @@
 				</ul>
 			</div>
 
-			<div class="about-section__chat" cf-context>
+			<div class="about-section__chat" id="about-section__chat">
 				<form id="cf-form" class="visuallyhidden">
 					<fieldset>
 						<label for="name">Hello handsome, what’s your name ?</label>
@@ -170,9 +172,9 @@
 
 					<fieldset cf-questions="Nice to meet you {previous-answer}, what do you want to chat about ?">
 						<label for="subject">Nice to meet you, what do you want to chat about ?</label>
-						<input type="checkbox" name="subject" cf-label="My new project" />
-						<input type="checkbox" name="subject" cf-label="A collaboration" />
-						<input type="checkbox" name="subject" cf-label="A partnership" />
+						<input type="checkbox" name="subject" value="My new project" cf-label="My new project" />
+						<input type="checkbox" name="subject" value="A collaboration" cf-label="A collaboration" />
+						<input type="checkbox" name="subject" value="A partnership" cf-label="A partnership" />
 					</fieldset>
 
 					<fieldset>

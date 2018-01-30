@@ -38,12 +38,17 @@
             height: 100%;
             .chatting & {
                 width: 550px;
-                transition-delay: .5s;
+                transition-delay: 0s;
             }
         }
     }
     &__chat {
         height: auto !important;
+        @include animation-off;
+        transition-delay: 1.6s;
+        .chatting & {
+            @include animation-on;
+        }
         @media screen and (min-width: $desktop-small) {
             height: auto !important;
             min-height: 350px;
@@ -56,12 +61,19 @@
         p {
             margin-bottom: 35px;
             font-family: $customfont-6;
+            @include animation-off;
+            transition-delay: 1s;
         }
         ul {
             font-family: $customfont-5;
             font-weight: 300;
             font-size: 14px;
             line-height: 22px;
+        }
+        .chatting & {
+            p {
+                @include animation-on;
+            }
         }
     }
     &__link {
@@ -72,6 +84,11 @@
         font-size: 10px;
         text-transform: uppercase;
         color: $altcolor;
+        @include animation-off;
+        transition-delay: 1.2s;
+        .chatting & {
+            @include animation-on;
+        }
         &:before {
             background: $altcolor;
         }
@@ -79,5 +96,11 @@
             color: $altcolor;
         }
     }
-
+    &__tags {
+        @include animation-off;
+        transition-delay: 1.4s;
+        .chatting & {
+            @include animation-on;
+        }
+    }
 }

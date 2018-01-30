@@ -55,7 +55,7 @@
 		width: 100%;
 		margin: 6px 0 0;
 		padding: 16px 24px;
-		border-radius: 4px 20px 20px 20px;
+		border-radius: 0 20px 20px 20px;
 		background: $altcolor;
 		color: $lightcolor;
 	}
@@ -63,8 +63,8 @@
 		width: 100%;
 		margin: 6px 0 0;
 		padding: 16px 24px;
-		border-radius: 20px 4px 20px 20px;
-		background: #F2F3F6;
+		border-radius: 20px 0 20px 20px;
+		background: #DBDDE2;
 	}
 	.conversational-form cf-chat-response.user {
 		padding-right: 68px;
@@ -78,28 +78,38 @@
 		min-height: 57px;
 		padding: 19px 60px 19px 30px;
 		height: 56px;
-		font-size: 14px;
-		font-weight: 300;
+		font-size: 13px;
+		font-weight: 900;
 		font-family: $customfont-6;
 		color: $customfont-6;
-		background: #F2F3F6;
+		background: #DBDDE2;
+		color: $altcolor;
 		border-color: transparent;
+		box-shadow: none;
+		@include placeholder {
+			color: $altcolor;
+		}
 	}
 	@media only screen and (min-width: 769px) {
 		.conversational-form cf-input input,
 		.conversational-form cf-input textarea {
-			font-size: 16px;
+			font-size: 13px;
 		}
 	}
 	.conversational-form cf-input input:not(:focus),
 	.conversational-form cf-input textarea:not(:focus) {
-		box-shadow: 0 0 1px rgba(58,58,58,0.5);
+		box-shadow: none;
 	}
 	.conversational-form cf-input-button {
-		background: #222;
+		background: $altcolor;
+		color: $lightcolor;
 		height: 42px;
 		width: 42px;
 		border: none;
+		@include hover {
+			background: $altcolor;
+			border-color: $altcolor;
+		}
 	}
 	.conversational-form cf-input-button.microphone-interface {
 		background: #fff;
@@ -109,7 +119,7 @@
 		background-size: 18px 19px;
 	}
 	.conversational-form cf-input-button.loading:after {
-		border: 2px solid #1ed97b;
+		border: 2px solid $altcolor;
 	}
 	.conversational-form cf-input-button .cf-icon-audio {
 		background-image: url("data:image/png;charset=utf-8;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAYAAAGpAGuzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtlJREFUeNpiUFJSYgDh////M7AwQMB/ZWVlBiYGJADiqACx/N27dxlByu7AZAACiAFqwCeQATA9vDA9KAb8BzGARv8HcRhBHJBpAAHECDIAZjGMAZJA0Y9u1mcg5kEWhJnLC5UEgf1QehFOOwACCFniKBBPBwouQXb8NiC2AuLFyJaDgCc2V+F0Lk4JkGsuYvMHCBhA6QNAQT8QgwUacCBd94DYAYRhUcKAJMkFFPyObDnM199g9gAEELLPMYIGCpYDTYnC5Y1/WHwUic/fjAwEABMDiYBkDaBg2gXErkCcCQom5BCBJQtYLCCH0h8gZgbiJ0Asi6YBFEvnoWxtFiSbQOA2lmAFgQBg0G7EFg/YFIOTKowNEEDYIi4GiKcB8WUgtgYqxvA0MliGFFFWUBsZ8QVrJLp1wNDZRmo8eJCqgZG+SWMQamBBSg64Ms9FYFzwQIu8L0zYkjIasIQmFxA4hqzBD1rEH0ASk4cWI9Oh/GxQ4tMCMq5CBQyB+AKaDY+BWAaI/wI1s4BsuAYqgqGS56F+2gd13n+oYlASZ0EOpXhQJkEy1RFU1UDZd5DzA3Ly3ggNKU6kfM2Inh+YsJR6yIXAf1jmJzviAAIMWxZFBvxAPAeIQ3DIrwHiFKCzP5JjgSe01iIGeAEt2U6qBa+BWIRIC94ALRAlNTOIkBDUIlTLbTTPzqMW0NWCrySY8xVfEXwLiFWRxDSB+AYQdwJxE5EWdEKrTQ0gdR1J/DbIBzPQFM+F0s1AbAvEH/AYDJKzBWayZjS9MDADlpPXAXEgksRbIDYB4gdIYupArAtlg5oSN6EFM8jlCkDmGSAWRlK/HigXhFxUFANxD5oLfkPbJlOhrSFkAArWbCDOAmJWNLkSoOG92MoiUAHfAcRlZCaaLiCuABr+n5jCjhVaXYYCsTMQs6HJ/wLivUC8GoiXAA39TU59gK/9B+snkV3h/CclbJArVrrmZAB+mc1ty+WBKAAAAABJRU5ErkJggg==");
@@ -154,5 +164,22 @@
 		width: 5px;
 		height: 5px;
 		border-radius: 50%;
+	}
+	.cf-button.cf-checkbox-button.highlight cf-checkbox,
+	.cf-button.cf-checkbox-button:focus cf-checkbox,
+	.cf-button.cf-checkbox-button:hover cf-checkbox,
+	.cf-button.cf-checkbox-button[checked=checked] cf-checkbox {
+		background: $altcolor;
+	}
+	.cf-button.cf-checkbox-button[checked=checked] cf-checkbox:after {
+		content: none;
+	}
+	.cf-button[checked=checked]:not(:focus).cf-button[checked=checked]:not(:hover):not(.highlight),
+	.cf-button[selected=selected]:not(:focus).cf-button[selected=selected]:not(:hover):not(.highlight) {
+		background: none;
+	}
+	cf-input.transparent {
+		opacity: 0;
+		transition: opacity .3s ease-in;
 	}
 }
