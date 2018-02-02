@@ -143,7 +143,7 @@
 	<!-- About section -->
 	<div id="about-section" class="about-section">
 		<div class="about-section__img">
-			<img src="http://placehold.it/900x768" alt="">
+			<img src="../assets/img/photo-about.jpg" alt="">
 		</div>
 
 		<div class="about-section__side">
