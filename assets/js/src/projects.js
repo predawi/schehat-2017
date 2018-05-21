@@ -30,33 +30,33 @@ projects.on('click', function (e) {
   setTimeout(function () {
     // Hide projects thumbs
     $('#projects-wrapper').fadeOut()
-  }, 200)
+  }, 0)
 
   setTimeout(function () {
     // Prepare zoom section
     $('#project-zoom-tpl').fadeIn().addClass('active')
     // Open project
     $('[data-zoom="' + dataProject + '"]').fadeIn()
-  }, 400)
+  }, 50)
 
   setTimeout(function () {
     $('body').addClass('appeared')
-  }, 500)
+  }, 100)
 
   setTimeout(function () {
     // Reset window scroll
     window.scrollTo(0, 0)
-  }, 600)
+  }, 150)
 
   setTimeout(function () {
     setWaypoints(mediaQuery, dataProject)
-  }, 1000)
+  }, 600)
 
   e.preventDefault()
 })
 
 // Click to close project
-$('#back-to-work').on('click', function (e) {
+$('#nav-back-to-work').on('click', function (e) {
   // Destroy waypoints
   var len = 0
   for (var o in waypoint) {

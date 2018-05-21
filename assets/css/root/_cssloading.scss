@@ -1,8 +1,24 @@
 //hide overlay when loadCSS function async load style and font css
 .cssloading__overlay {
+	position: fixed;
 	z-index: -$zindex*2;
 	opacity: 0;
-	width: 0;
-	height: 0;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: $darkcolor;
+	background-image: url(#{$images-url}/loader.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
 	visibility:hidden;
+	transition: all 1s ease-in-out;
+	transition-delay: 1s;
+	.fonts-loading & {
+		z-index: 999;
+		opacity: 1;
+		visibility: visible;
+	}
+}
+.fonts-loading {
+	overflow: hidden;
 }

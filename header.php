@@ -99,10 +99,10 @@
 	<body itemscope itemtype="http://schema.org/WebPage" class="<?php echo $class; ?>">
 
 		<div class="cssloading__overlay"></div>
-		<div id="main">
+		<div id="main" class="container">
 
 			<div class="header__logo">
-				<a href="01-home.php" class="header__logo-link">
+				<a href="/" class="header__logo-link">
 					<span>Sarah</span>
 					<span>Norrsken</span>
 				</a>
@@ -111,9 +111,13 @@
 			<nav id="menu" class="menu menu__mobile" role="navigation" tabindex="-1" aria-label="Navigation Principal">
 				<div class="container">
 					<ul class="sf-menu">
-						<li><a href="#" class="link-w-veil" data-nav="work" id="nav-work"><span>Work</span></a></li>
-						<li><a href="#" class="link-w-veil" id="back-to-work" id="nav-back-to-work"><span>Back to work</span></a></li>
-						<li><a href="#" class="link-w-veil" data-nav="about" id="nav-about"><span>About</span></a></li>
+						<li><a href="#" class="link-w-veil" data-nav="nav-work" id="nav-work"><span>Work</span></a></li>
+						<li><a href="#" class="link-w-veil" data-nav="nav-back-to-work" id="nav-back-to-work"><span>Back to work</span></a></li>
+						<li><a href="#" class="link-w-veil" data-nav="nav-about" id="nav-about"><span>About</span></a></li>
+
+						<li><a href="https://twitter.com/nrrskn" target="_blank" class="link-w-veil social-link"><span>Twitter</span></a></li>
+						<li><a href="https://www.instagram.com/snorrsken/" target="_blank" class="link-w-veil social-link"><span>Instagrm</span></a></li>
+						<li><a href="https://www.linkedin.com/in/sarah-norrsken-68b104164/" target="_blank" class="link-w-veil social-link"><span>Linkedin</span></a></li>
 					</ul>
 				</div>
 			</nav>

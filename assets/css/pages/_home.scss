@@ -14,97 +14,116 @@
         opacity: 0;
     }
 }
+.sidebar {
+    @media screen and (min-width: $desktop-small) {
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        height: 100vh; width: 565px;
+        min-height: 700px;
+        transition: z-index 0s ease-in-out;
+        @media screen and (min-width: $desktop-small) {
+            .scrolled & {
+                //transition-delay: 0.3s;
+                //z-index: 2;
+            }
+        }
+    }
+}
 .intro {
-    display: flex;
-    vertical-align: middle;
-    text-align: center;
     transition: opacity 0.3s ease-in-out;
+    @media screen and (min-width: $desktop-small) {
+        display: flex;
+        vertical-align: middle;
+        text-align: center;
+    }
     .zoomed & {
         opacity: 0;
     }
     &--behind {
+        display: none;
         z-index: 1;
         opacity: 0;
-        .scrolled & {
-            opacity: 1;
+        @media screen and (min-width: $desktop-small) {
+            display: none;
+            .scrolled & {
+                opacity: 1;
+            }
         }
     }
     &--above {
         z-index: 4;
-        .scrolled & {
-            opacity: 0;
+        .chatting & {
+            display: none;
+            z-index: -2;
+        }
+        @media screen and (min-width: $desktop-small) {
+            .scrolled & {
+                // opacity: 0;
+            }
+            &.desktop-hidden {
+                display: none;
+            }
+            .zoomed &,
+            .chatting & {
+                opacity: 0;
+                transition-delay: .3s;
+            }
         }
     }
 }
 .intro__title {
     position: relative;
     display: inline-block;
-    letter-spacing: 8.5px;
-    text-align: left;
     color: $lightcolor;
-    text-transform: uppercase;
-    text-align: center;
+    text-align: left;
+    line-height: 42px;
+    font-family: $customfont-1;
+    font-weight: 400;
+    font-size: 38px;
     .fire {
-        position: absolute;
-        bottom: -4px; right: 10px;
+        margin: 20px auto;
+        text-align: center;
         img {
-            max-width: 60px;
+            max-width: 80px;
             height: auto;
         }
     }
     @media screen and (min-width: $desktop-small) {
-        margin: auto;
-        line-height: 65px;
+        margin: 0;
+        line-height: 82px;
+        font-size: 80px;
+        span {
+            white-space: nowrap;
+        }
+        .fire {
+            position: absolute;
+            bottom: -22px;
+            left: 434px;
+            margin: 0;
+            text-align: left;
+            img {
+                max-width: 60px;
+                height: auto;
+            }
+        }
     }
 }
-.font-gradual {
-    letter-spacing: 12.6px;
-    font-size: 68px;
-    font-family: $customfont-1;
-    font-weight: 700;
+
+.mobile-disclaimer {
+    display: block;
+    line-height: 25px;
+    margin-bottom: 40px;
+    font-size: 18px;
     @media screen and (min-width: $desktop-small) {
-        font-size: 68px;
+        display: none;
     }
-}
-.font-peacesans {
-    letter-spacing: 3.78px;
-    font-size: 80px;
-    font-family: $customfont-2;
-    font-weight: 300;
-    @media screen and (min-width: $desktop-small) {
-        font-size: 70px;
-    }
-}
-.font-zefani {
-    position: relative;
-    top: -11px;
-    font-size: 45px;
-    font-family: $customfont-3;
-    &:after {
-        content: "";
-        position: absolute;
-        z-index: 1;
-        bottom: 1px;
-        left: 2px;
-        width: 36px;
-        height: 6px;
-        background: $maincolor;
-    }
-    @media screen and (min-width: $desktop-small) {
-        font-size: 45px;
-    }
-}
-.font-bebas {
-    letter-spacing: 10.78px;
-    font-size: 70px;
-    font-family: $customfont-4;
-    font-weight: 300;
-    @media screen and (min-width: $desktop-small) {}
 }
 
 .background-holder {
     position: fixed;
     z-index: 1;
+    display: none;
     top: 0; left: 0;
     opacity: 0;
     width: 100%; height: 100%;
@@ -114,5 +133,8 @@
     transition: all 1s ease-in-out;
     .zoomed & {
         opacity: 1;
+    }
+    @media screen and (min-width: $desktop-small) {
+        display: block;
     }
 }

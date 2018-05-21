@@ -16,8 +16,14 @@
         </div>
     </div>
 
-    <p class="project__description">Ebay was looking for an effective way to promote the platform to the advertisers. Here are some scenes from the video I designed for them.</p>
-
+    <div class="project__description__wrapper">
+        <p class="project__description">
+            <span class="project-zoom__title">
+                Playful animations for Ebay France
+            </span>
+            Ebay was looking for an effective way to promote the platform to the advertisers. Here are some scenes from the video I designed for them.</p>
+    </div>
+    
     <div class="project-slide">
         <video width="760" height="" muted loop>
             <source src="../assets/img/videos/ebay1.mp4" type="video/mp4">

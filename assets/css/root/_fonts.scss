@@ -1,20 +1,6 @@
-// Gradual
-@include declare-font-face("Gradual", "#{$fonts-url}/gradual/gradual-light"); //lightx300
-@include declare-font-face("Gradual", "#{$fonts-url}/gradual/gradual-regular", 400); //regularx400
-@include declare-font-face("Gradual", "#{$fonts-url}/gradual/gradual-bold", 700); //boldx700
-
-// Bebas
-@include declare-font-face("Bebas", "#{$fonts-url}/bebas/BebasNeue"); //regular
-
-// PeaceSans
-@include declare-font-face("PeaceSans", "#{$fonts-url}/peacesans/peacesans"); //regular
-
-// Zefani
-@include declare-font-face("Zefani", "#{$fonts-url}/zefani/zefani"); //regular
-
-// Helvetica Neue
-@include declare-font-face("HelveticaNeue", "#{$fonts-url}/helvetica/HelveticaNeueRoman"); //regular
-@include declare-font-face("HelveticaNeue", "#{$fonts-url}/helvetica/HelveticaNeueBlackExtended", 700); //boldx700
-
-// BWGradual
-@include declare-font-face("BWGradual", "#{$fonts-url}/bwgradual/BwGradual-Regular"); //regular
+// Value
+@include declare-font-face("Value-Serif", "#{$fonts-url}/value/Value-Serif");
+// Race1
+@include declare-font-face("Race1", "#{$fonts-url}/race1/race1");
+// Circular
+@include declare-font-face("Circular", "#{$fonts-url}/circular/CircularStd-Book");

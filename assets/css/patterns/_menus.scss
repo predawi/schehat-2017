@@ -27,8 +27,11 @@
 	}
 }
 .menu {
+	position: relative;
+	z-index: 999;
 	@include clearfix;
 	width: auto;
+	padding: 0 10px;
 	.wrapper {
 		padding: 0;
 	}
@@ -36,16 +39,17 @@
 		margin: 0;
 		@include clearfix;
 		&>li {
+			display: block;
+			margin-bottom: 15px;
 			line-height: 17px;
-			font-family: $customfont-5;
-			font-weight: 700;
-			font-size: 12px;
+			font-family: $customfont-3;
+			font-weight: 400;
+			font-size: 15px;
 			text-transform: uppercase;
 			&>a {
 				display: inline-block;
 				color: $lightcolor;
-				.zoomed &,
-				.chatting & {
+				.zoomed & {
 					color: $lightcolor;
 				}
 			}
@@ -58,17 +62,21 @@
 		//reset mobile menu position and dimensions
 		position: fixed;
 		z-index: 10;
-		top: 50%; right: 4%;
+		bottom: 15%;
 		left: auto;
-		margin-top: -21px;
 		display: inline-block;
+		padding: 0 10px;
 		transition: all .5s cubic-bezier(.9, 0, 0, 1);
 		transition-delay: 1s;
 		ul {
 			&>li {
-				display: block;
+				margin-bottom: 0;
+				display: inline-block;
 				position: relative;
-				text-align: right;
+				margin-right: -4px;
+				a {
+					margin-right: 24px;
+				}
 				@include hover {
 					ul {
 						top: 40px;
@@ -76,20 +84,33 @@
 				}
 			}
 		}
-		.chatting & {
-			right: calc(550px + 4%);
-			transition-delay: 0s;
+		.social-link {
+			display: none;
+			.chatting & {
+				display: inline-block;
+			}
 		}
 	}
 }
 #nav-work {
+	display: none;
+	@media screen and (min-width: $desktop-small) {
+		.chatting & {
+			display: inline-block;
+		}
+	}
+}
+#nav-back-to-work {
+	display: none;
 	.zoomed & {
+		display: inline-block;
+	}
+	.zoomed.chatting & {
 		display: none;
 	}
 }
-#back-to-work {
-	display: none;
-	.zoomed & {
-		display: block;
+#nav-about {
+	.chatting & {
+		display: none;
 	}
 }

@@ -1,29 +1,34 @@
 /* Header css
  ----------------------------------------------------------------------------------------------------*/
 .header__logo {
+	z-index: 10;
+	margin-top: 65px;
+	margin-bottom: 40px;
+	position: relative;
 	display: inline-block;
+	padding: 0 20px;
 	@media screen and (min-width: $desktop-small) {
-		z-index: 10;
 		position: fixed;
-		top: 50%; left: 4%;
-		margin-top: -23px;
+		top: 25%;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
 	}
 }
 .header__logo-link {
 	display: block;
-	width: 100px;
-	line-height: 21px;
-	font-family: $customfont-5;
-	font-weight: 700;
-	font-size: 12px;
+	width: 200px;
+	line-height: 24px;
+	font-family: $customfont-2;
+	font-size: 20px;
 	text-transform: uppercase;
 	color: $lightcolor;
-	span {
-		display: inline-block;
-	}
 	.zoomed &,
 	.chatting & {
 		color: $lightcolor;
+	}
+	span {
+		margin-right: 5px;
 	}
 	@include hover {
 		color: $lightcolor;

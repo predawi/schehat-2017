@@ -102,7 +102,7 @@ require( dirname( __FILE__ ) . '/functions/_init.php' );
 	<body itemscope itemtype="http://schema.org/WebPage" class="<?php echo $class; ?>">
 
 		<div class="cssloading__overlay"></div>
-		<div id="main">
+		<div id="main" class="container">
 
 			<div class="header__logo">
 				<a href="01-home.php" class="header__logo-link">

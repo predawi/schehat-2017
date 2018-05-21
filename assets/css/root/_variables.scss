@@ -6,7 +6,7 @@ $susy: (
 	columns: 12,
 	column-width: 60px,
 	gutters: 20px/60px,
-	container: 760px
+	container: 1264px
 );
 //Sample grid with Fixed 20px gutters.
 //Gutters are set with padding on both sideof the element. last argument is not needed
@@ -28,12 +28,9 @@ $zindex: 1;
 $font-sansserif: Arial, Helvetica, sans-serif;
 $font-serif: Times, Georgia, serif;
 
-$customfont-1: Gradual, sans-serif;
-$customfont-2: PeaceSans, sans-serif;
-$customfont-3: Zefani, sans-serif;
-$customfont-4: Bebas, sans-serif;
-$customfont-5: HelveticaNeue, sans-serif;
-$customfont-6: BWGradual, sans-serif;
+$customfont-1: "Value-Serif", serif;
+$customfont-2: "Race1", sans-serif;
+$customfont-3: "Circular", sans-serif;
 
 // Font Sizes
 $base-font-size: 16px;
@@ -50,7 +47,7 @@ $half-base-spacing: $base-spacing / 2;
 //Colors
 $maincolor: #ED8BDF;
 $altcolor: #283268;
-$homecolor: #DAB1EB;
+$homecolor: #434263;
 $textcolor: #fff;
 
 $lightcolor: #fff;

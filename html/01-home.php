@@ -6,128 +6,130 @@
 
 	<!-- MAIN -->
 	<div class="main" id="main">
-		<!-- Intro -->
-		<section id="intro" class="section--full intro intro--above">
-			<h1 class="intro__title">
-				<!-- Digital -->
-				<span class="txtwav slow" data-font="font-peacesans">
-					Digital
-				</span>&nbsp;<br>
-				<!-- Art direction -->
-				<span class="txtwav slow" data-font="font-peacesans">
-					Art
-				</span>&nbsp;
-				<span class="txtwav slow" data-font="font-peacesans">
-					direction
-				</span>&nbsp;<br>
-				<!-- & visual -->
-				<span class="txtwav slow" data-font="font-peacesans">
-					&
-				</span>&nbsp;
-				<span class="txtwav slow" data-font="font-peacesans">
-					visual
-				</span>&nbsp;<br>
-				<!-- Production -->
-				<span class="txtwav slow" data-font="font-peacesans">
-					production
-				</span>&nbsp;<br>
-				<!-- Made with -->
-				<span class="txtwav slow" data-font="font-peacesans">
-					made
-				</span>&nbsp;
-				<span class="txtwav slow" data-font="font-peacesans">
-					with
-				</span>&nbsp;<br>
-				<span class="visuallyhidden">fire</span>
-				<div class="fire">
-					<img src="../assets/img/fire.gif" alt="" class="lazyload">
+		<div class="container">
+			<!-- Intro -->
+			<section id="intro" class="section--full intro intro--above">
+				<h1 class="intro__title">
+					<!-- Digital -->
+					<span>
+						Digital
+					</span>&nbsp;<br>
+					<!-- Art direction -->
+					<span>
+						Art
+					</span>&nbsp;
+					<span>
+						direction
+					</span>&nbsp;<br>
+					<!-- & visual -->
+					<span>
+						&
+					</span>&nbsp;
+					<span>
+						visual
+					</span>&nbsp;<br>
+					<!-- Production -->
+					<span>
+						production
+					</span>&nbsp;<br>
+					<!-- Made with -->
+					<span>
+						made
+					</span>&nbsp;
+					<span>
+						with
+					</span>&nbsp;<br>
+					<span class="visuallyhidden">fire</span>
+					<div class="fire">
+						<img src="../assets/img/fire.gif" alt="" class="lazyload">
+					</div>
+				</h1>
+			</section>
+
+			<section id="intro" class="section--full intro intro--behind">
+				<div class="intro__title">
+					<!-- Digital -->
+					<span>
+						Digital
+					</span>&nbsp;<br>
+					<!-- Art direction -->
+					<span>
+						Art
+					</span>&nbsp;
+					<span>
+						direction
+					</span>&nbsp;<br>
+					<!-- & visual -->
+					<span>
+						&
+					</span>&nbsp;
+					<span>
+						visual
+					</span>&nbsp;<br>
+					<!-- Production -->
+					<span>
+						production
+					</span>&nbsp;<br>
+					<!-- Made with -->
+					<span>
+						made
+					</span>&nbsp;
+					<span>
+						with
+					</span>&nbsp;<br>
+					<div class="fire">
+						<img src="../assets/img/fire.gif" alt="" class="lazyload">
+					</div>
+				</divh1>
+			</section>
+
+			<!-- Projects previews -->
+			<div class="projects-wrapper" id="projects-wrapper">
+				<!-- Col left -->
+				<div class="projects-wrapper__col projects-wrapper__col--left">
+					<!-- Project 01 -->
+					<section id="project-01" class="project">
+						<h2 class="project__title rellax" data-rellax-speed="-2"><span>GQ</span> <br><span>France</span></h2>
+						<div class="project__img">
+							<a href="#" class="project__link" data-project="project-01" data-bg="#FF5B2C">
+								<img src="../assets/img/thumb-gq.jpg" alt="">
+							</a>
+						</div>
+					</section>
+
+					<!-- Project 04 -->
+					<section id="project-04" class="project">
+						<h2 class="project__title rellax" data-rellax-speed="-2"><span>Basalte</span></h2>
+						<div class="project__img">
+							<a href="#" class="project__link" data-project="project-04" data-bg="#121212">
+								<img src="../assets/img/thumb-basalte.jpg" alt="">
+							</a>
+						</div>
+					</section>
 				</div>
-			</h1>
-		</section>
 
-		<section id="intro" class="section--full intro intro--behind">
-			<div class="intro__title">
-				<!-- Digital -->
-				<span class="txtwav slow" data-font="font-peacesans">
-					Digital
-				</span>&nbsp;<br>
-				<!-- Art direction -->
-				<span class="txtwav slow" data-font="font-peacesans">
-					Art
-				</span>&nbsp;
-				<span class="txtwav slow" data-font="font-peacesans">
-					direction
-				</span>&nbsp;<br>
-				<!-- & visual -->
-				<span class="txtwav slow" data-font="font-peacesans">
-					&
-				</span>&nbsp;
-				<span class="txtwav slow" data-font="font-peacesans">
-					visual
-				</span>&nbsp;<br>
-				<!-- Production -->
-				<span class="txtwav slow" data-font="font-peacesans">
-					production
-				</span>&nbsp;<br>
-				<!-- Made with -->
-				<span class="txtwav slow" data-font="font-peacesans">
-					made
-				</span>&nbsp;
-				<span class="txtwav slow" data-font="font-peacesans">
-					with
-				</span>&nbsp;<br>
-				<div class="fire">
-					<img src="../assets/img/fire.gif" alt="" class="lazyload">
+				<!-- Col right -->
+				<div class="projects-wrapper__col projects-wrapper__col--right">
+					<!-- Project 02 -->
+					<section id="project-02" class="project">
+						<h2 class="project__title rellax" data-rellax-speed="-2"><span>M6</span> <br><span>Publicité</span></h2>
+						<div class="project__img">
+							<a href="#" class="project__link" data-project="project-02" data-bg="#65899C">
+								<img src="../assets/img/thumb-m6pub.gif" alt="">
+							</a>
+						</div>
+					</section>
+
+					<!-- Project 03 -->
+					<section id="project-03" class="project">
+						<h2 class="project__title rellax" data-rellax-speed="-2"><span>Ebay</span></h2>
+						<div class="project__img">
+							<a href="#" class="project__link" data-project="project-03" data-bg="#8B7EBE">
+								<img src="../assets/img/thumb-ebay.gif" alt="">
+							</a>
+						</div>
+					</section>
 				</div>
-			</divh1>
-		</section>
-
-		<!-- Projects previews -->
-		<div class="projects-wrapper" id="projects-wrapper">
-			<!-- Col left -->
-			<div class="projects-wrapper__col projects-wrapper__col--left">
-				<!-- Project 01 -->
-				<section id="project-01" class="project">
-					<h2 class="project__title rellax" data-rellax-speed="-2"><span>GQ</span> <br><span>France</span></h2>
-					<div class="project__img">
-						<a href="#" class="project__link" data-project="project-01" data-bg="#FF5B2C">
-							<img src="../assets/img/thumb-gq.jpg" alt="">
-						</a>
-					</div>
-				</section>
-
-				<!-- Project 04 -->
-				<section id="project-04" class="project">
-					<h2 class="project__title rellax" data-rellax-speed="-2"><span>Basalte</span></h2>
-					<div class="project__img">
-						<a href="#" class="project__link" data-project="project-04" data-bg="#121212">
-							<img src="../assets/img/thumb-basalte.jpg" alt="">
-						</a>
-					</div>
-				</section>
-			</div>
-
-			<!-- Col right -->
-			<div class="projects-wrapper__col projects-wrapper__col--right">
-				<!-- Project 02 -->
-				<section id="project-02" class="project">
-					<h2 class="project__title rellax" data-rellax-speed="-2"><span>M6</span> <br><span>Publicité</span></h2>
-					<div class="project__img">
-						<a href="#" class="project__link" data-project="project-02" data-bg="#65899C">
-							<img src="../assets/img/thumb-m6pub.gif" alt="">
-						</a>
-					</div>
-				</section>
-
-				<!-- Project 03 -->
-				<section id="project-03" class="project">
-					<h2 class="project__title rellax" data-rellax-speed="-2"><span>Ebay</span></h2>
-					<div class="project__img">
-						<a href="#" class="project__link" data-project="project-03" data-bg="#8B7EBE">
-							<img src="../assets/img/thumb-ebay.gif" alt="">
-						</a>
-					</div>
-				</section>
 			</div>
 		</div>
 	</div>

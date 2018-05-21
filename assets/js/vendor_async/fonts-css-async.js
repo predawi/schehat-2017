@@ -14,15 +14,14 @@ I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",m
 
 
 // detect loading of fonts using fontfaceobserver
-var Zefani = new FontFaceObserver("Zefani");
-var PeaceSans = new FontFaceObserver("PeaceSans");
-var Gradual = new FontFaceObserver("Gradual");
-var Bebas = new FontFaceObserver("Bebas");
+var Value = new FontFaceObserver("Value-Serif");
+var Race1 = new FontFaceObserver("Race1");
+var Circular = new FontFaceObserver("Circular");
 
 //Fallback condition for non Promise ready browsers
 if ( typeof Promise !== "undefined" ) {
 	//Load any fonts you want
-	Promise.all([Zefani.load(), PeaceSans.load(), Gradual.load(), Bebas.load()]).then(function () {
+	Promise.all([Value.load(), Race1.load(), Circular.load()]).then(function () {
 		//Add class when fonts are loaded
 		document.documentElement.classList.remove('fonts-loading');
 		// set mark on storage for future page views

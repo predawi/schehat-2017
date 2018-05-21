@@ -16,7 +16,13 @@
         </div>
     </div>
 
-    <p class="project__description">M6 Publicité needed a new visual concept for their website. I focused on a clean design, detailed micro interactions and animated illustrations in my creative proposal. Work made in my previous agency, Be API.</p>
+    <div class="project__description__wrapper">
+        <p class="project__description">
+            <span class="project-zoom__title">
+                Prototyping a shiny user interface for M6 Publicité
+            </span>
+            M6 Publicité needed a new visual concept for their website. I focused on a clean design, detailed micro interactions and animated illustrations in my creative proposal. Work made in my previous agency, Be API.</p>
+    </div>
 
     <div class="project-slide">
         <video width="760" height="" muted loop>

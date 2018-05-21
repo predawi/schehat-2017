@@ -2,13 +2,22 @@
 ----------------------------------------------------------------------------------------------------*/
 .projects-wrapper {
     position: relative;
+    display: none;
     z-index: 2;
     width: 90%;
     margin: 100vh auto 0;
     transition: opacity 0.2s ease-in-out;
     outline: none;
+    .chatting & {
+        opacity: 0;
+        z-index: -2;
+    }
     @media screen and (min-width: $desktop-small) {
-        width: 768px;
+        position: absolute;
+        display: block;
+        right: 0;
+        width: 732px;
+        padding-top: 104px;
         animation: showProjects 1s ease-in-out forwards;
     }
     .zoomed & {
@@ -17,7 +26,7 @@
     &__col {
         @include clearfix;
         @media screen and (min-width: $desktop-small) {
-            width: 41%;
+            width: 42%;
         }
         &--left {
             @media screen and (min-width: $desktop-small) {
@@ -49,9 +58,10 @@
         position: relative;
         z-index: 2;
         margin-bottom: 30px;
-        font-size: 20px;
-        font-family: $customfont-5;
-        font-weight: 900;
+        font-size: 18px;
+        line-height: 20px;
+        font-family: $customfont-2;
+        font-weight: 400;
         text-transform: uppercase;
         span {
             display: inline-block;
@@ -81,21 +91,15 @@
         }
         @media screen and (min-width: $desktop-small) {
             position: absolute;
-            top: 60%;
+            top: 8%;
             margin: 0;
-            .scrolled & {
-                span {
-                    color: $lightcolor;
-                    &:after {
-                        right: -100%;
-                    }
-                }
-            }
             .projects-wrapper__col--left & {
-                left: -50px;
+                text-align: right;
+                right: 92%;
             }
             .projects-wrapper__col--right & {
-                left: 85%;
+                left: 92%;
+                top: 60%;
             }
         }
     }
@@ -108,7 +112,7 @@
         transition-delay: .3s;
         overflow: hidden;
         .appeared & {
-            @include animation-on;
+            //@include animation-on;
         }
     }
     &__metas__item {
@@ -118,14 +122,14 @@
         text-align: left;
         font-size: 10px;
         font-weight: 600;
-        font-family: $customfont-5;
+        font-family: $customfont-3;
         color: $lightcolor;
         text-transform: uppercase;
         span {
             display: block;
             font-weight: 300;
             font-size: 11px;
-            font-family: $customfont-6;
+            font-family: $customfont-3;
         }
     }
     img {
@@ -146,16 +150,49 @@
             }
         }
     }
+    &-zoom__title {
+        display: block;
+        margin-bottom: 30px;
+        line-height: 57px;
+        font-size: 50px;
+        font-family: $customfont-1;
+        @media screen and (min-width: $desktop-small) {
+            float: left;
+            width: 565px;
+            max-width: 100%;
+        }
+    }
     &__description {
         max-width: 490px;
         margin: 0 auto 60px;
-        line-height: 22px;
-        font-family: $customfont-6;
+        line-height: 27px;
+        font-size: 20px;
+        font-family: $customfont-3;
         @include animation-off;
         transition: all .6s ease-in-out;
         transition-delay: .9s;
         .appeared & {
             @include animation-on;
+        }
+        @media screen and (min-width: $desktop-small) {
+            max-width: 100%;
+        }
+        &__wrapper {
+            @media screen and (min-width: $desktop-small) {
+                position: fixed;
+                top: 32%;
+                width: 565px;
+            }
+        }
+    }
+    @include hover {
+        .project__title {
+            span {
+                color: $lightcolor;
+                &:after {
+                    right: -100%;
+                }
+            }
         }
     }
 }
@@ -188,7 +225,7 @@
     position: relative;
     z-index: 1;
     display: none;
-    text-align: center;
+    @include clearfix;
 }
 .project-slide {
     margin-bottom: 100px;
@@ -197,8 +234,13 @@
     .appeared & {
         @include animation-on;
     }
+    video,
     img {
-        max-width: 760px;
+        max-width: 100%;
         margin: auto;
+    }
+    @media screen and (min-width: $desktop-small) {
+        float: right;
+        width: 658px;
     }
 }

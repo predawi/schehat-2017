@@ -16,7 +16,14 @@
         </div>
     </div>
 
-    <p class="project__description">GQ France needed an app for its sales team to present the magazine’s results and assets in their meetings with advertisers. My role was to lead the design process of the project.</p>
+    <div class="project__description__wrapper">
+        <p class="project__description">
+            <span class="project-zoom__title">
+                Crafting a digital tool for GQ Magazine sales team
+            </span>
+            GQ France needed an app for its sales team to present the magazine’s results and assets in their meetings with advertisers. My role was to lead the design process of the project.
+        </p>
+    </div>
 
     <div class="project-slide">
         <video width="760" height="" muted loop>

@@ -12,7 +12,7 @@ $('[data-nav]').on('click', function (e) {
   if ($(this).data('nav') === 'work') $('body').addClass('scrolled')
   $('body').addClass('scrolled')
   setTimeout(() => {
-    $('.intro--above').hide()
+    // $('.intro--above').hide()
   }, 300)
   e.preventDefault()
 
@@ -25,6 +25,6 @@ $('[data-nav]').on('click', function (e) {
 $(window).scroll(function () {
   $('body').addClass('scrolled')
   setTimeout(() => {
-    $('.intro--above').hide()
+    // $('.intro--above').addClass('desktop-hidden')
   }, 300)
 })

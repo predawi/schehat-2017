@@ -1,6 +1,7 @@
 /* Main Layout
 ----------------------------------------------------------------------------------------------------*/
 .container {
+	position: relative;
 	@include container;
 	padding: 0 10px;
 	@media screen and (min-width: $desktop-small) {
@@ -12,9 +13,9 @@
 		@include span(9);
 	}
 }
-.sidebar {
+.main__content {
 	@media screen and (min-width: $desktop-small) {
-		@include span(3 last);
+		min-height: 100vh;
 	}
 }
 

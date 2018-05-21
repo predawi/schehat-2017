@@ -16,7 +16,13 @@
         </div>
     </div>
 
-    <p class="project__description">Basalte is a collective of young curators based around a reflexion on the world of contemporary art, accompanying the current creation by developing exhibitions and supporting production, distribution and publishing. They asked me to design their visual identity and website a few weeks before the launch of their first exhibition.</p>
+    <div class="project__description__wrapper">
+        <p class="project__description">
+            <span class="project-zoom__title">
+                Building an evolutive identity for Basalte
+            </span>
+            Basalte is a collective of young curators based around a reflexion on the world of contemporary art, accompanying the current creation by developing exhibitions and supporting production, distribution and publishing. They asked me to design their visual identity and website a few weeks before the launch of their first exhibition.</p>
+    </div>
 
     <div class="project-slide">
         <img src="../assets/img/videos/basalte1.gif" alt="">
