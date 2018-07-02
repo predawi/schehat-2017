@@ -12,34 +12,19 @@
 				<h1 class="intro__title">
 					<!-- Digital -->
 					<span>
-						Digital
+						Interactive
 					</span>&nbsp;<br>
 					<!-- Art direction -->
 					<span>
-						Art
-					</span>&nbsp;
-					<span>
-						direction
-					</span>&nbsp;<br>
-					<!-- & visual -->
-					<span>
-						&
+						design +
 					</span>&nbsp;
 					<span>
 						visual
 					</span>&nbsp;<br>
-					<!-- Production -->
+					<!-- & visual -->
 					<span>
 						production
-					</span>&nbsp;<br>
-					<!-- Made with -->
-					<span>
-						made
-					</span>&nbsp;
-					<span>
-						with
-					</span>&nbsp;<br>
-					<span class="visuallyhidden">fire</span>
+					</span>
 					<div class="fire">
 						<img src="../assets/img/fire.gif" alt="" class="lazyload">
 					</div>
@@ -50,33 +35,19 @@
 				<div class="intro__title">
 					<!-- Digital -->
 					<span>
-						Digital
+						Interactive
 					</span>&nbsp;<br>
 					<!-- Art direction -->
 					<span>
-						Art
-					</span>&nbsp;
-					<span>
-						direction
-					</span>&nbsp;<br>
-					<!-- & visual -->
-					<span>
-						&
+						design +
 					</span>&nbsp;
 					<span>
 						visual
 					</span>&nbsp;<br>
-					<!-- Production -->
+					<!-- & visual -->
 					<span>
 						production
-					</span>&nbsp;<br>
-					<!-- Made with -->
-					<span>
-						made
-					</span>&nbsp;
-					<span>
-						with
-					</span>&nbsp;<br>
+					</span>
 					<div class="fire">
 						<img src="../assets/img/fire.gif" alt="" class="lazyload">
 					</div>

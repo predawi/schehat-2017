@@ -44,11 +44,11 @@
 			line-height: 17px;
 			font-family: $customfont-3;
 			font-weight: 400;
-			font-size: 15px;
+			font-size: 13px;
 			text-transform: uppercase;
 			&>a {
 				display: inline-block;
-				color: $lightcolor;
+				color: $textcolor;
 				.zoomed & {
 					color: $lightcolor;
 				}
@@ -62,7 +62,7 @@
 		//reset mobile menu position and dimensions
 		position: fixed;
 		z-index: 10;
-		bottom: 15%;
+		bottom: 18%;
 		left: auto;
 		display: inline-block;
 		padding: 0 10px;

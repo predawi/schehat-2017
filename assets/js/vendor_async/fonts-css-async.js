@@ -14,14 +14,14 @@ I(c,'"'+c.family+'",serif'));z(p,function(a){h=a;t()});x(p,I(c,'"'+c.family+'",m
 
 
 // detect loading of fonts using fontfaceobserver
-var Value = new FontFaceObserver("Value-Serif");
+var Grotesk = new FontFaceObserver("Grotesk");
 var Race1 = new FontFaceObserver("Race1");
 var Circular = new FontFaceObserver("Circular");
 
 //Fallback condition for non Promise ready browsers
 if ( typeof Promise !== "undefined" ) {
 	//Load any fonts you want
-	Promise.all([Value.load(), Race1.load(), Circular.load()]).then(function () {
+	Promise.all([Grotesk.load(), Race1.load(), Circular.load()]).then(function () {
 		//Add class when fonts are loaded
 		document.documentElement.classList.remove('fonts-loading');
 		// set mark on storage for future page views

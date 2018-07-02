@@ -22,15 +22,18 @@
 	font-family: $customfont-2;
 	font-size: 20px;
 	text-transform: uppercase;
-	color: $lightcolor;
+	color: $textcolor;
 	.zoomed &,
 	.chatting & {
-		color: $lightcolor;
+		color: $textcolor;
 	}
 	span {
 		margin-right: 5px;
 	}
 	@include hover {
+		color: $textcolor;
+	}
+	.zoomed & {
 		color: $lightcolor;
 	}
 }

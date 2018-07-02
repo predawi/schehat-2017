@@ -180,11 +180,11 @@
     }
     &__mail {
         display: inline-block;
-        color: $lightcolor;
+        color: $textcolor;
         font-size: 24px;
         font-weight: 700;
         @include hover {
-            color: $lightcolor;
+            color: $textcolor;
         }
     }
 }

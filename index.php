@@ -11,20 +11,20 @@
 				<!-- Intro -->
 				<section id="intro" class="section--full intro intro--above">
 					<h1 class="intro__title">
+						<!-- Digital -->
 						<span>
-							Digital<br>
-						</span>
+							Interactive
+						</span>&nbsp;<br>
+						<!-- Art direction -->
 						<span>
-							art direction and<br>
-						</span>
+							design +
+						</span>&nbsp;
 						<span>
-							visual production<br>
-						</span>
+							visual
+						</span>&nbsp;<br>
+						<!-- & visual -->
 						<span>
-							made with <span class="visuallyhidden">fire</span>
-							<div class="fire">
-								<img src="../assets/img/allumette.gif" alt="" class="lazyload">
-							</div>
+							production
 						</span>
 					</h1>
 
@@ -35,20 +35,20 @@
 
 				<section id="intro" class="section--full intro intro--behind">
 					<div class="intro__title">
+						<!-- Digital -->
 						<span>
-							Digital<br>
-						</span>
+							Interactive
+						</span>&nbsp;<br>
+						<!-- Art direction -->
 						<span>
-							art direction and<br>
-						</span>
+							design +
+						</span>&nbsp;
 						<span>
-							visual production<br>
-						</span>
+							visual
+						</span>&nbsp;<br>
+						<!-- & visual -->
 						<span>
-							made with <span class="visuallyhidden">fire</span>
-							<div class="fire">
-								<img src="../assets/img/allumette.gif" alt="" class="lazyload">
-							</div>
+							production
 						</span>
 					</div>
 				</section>
